@@ -1141,7 +1141,26 @@ input[type="button"] {
 	box-sizing: border-box;
 }
 
+.overlay {
+	height: 200px;
+	background: rgb(0, 0, 0);
+  	background: rgba(0, 0, 0, 0.5); /* Black see-through */
+  	color: #f1f1f1;
+  	width: 100%;
+  	position: absolute;
+  	z-index: 3;
+  	bottom: 0;
+  	opacity: 0;
+  	transition: .5s;
+  	text-align: center;
+  	line-height: 200px;
+  	font-family: 'MADE TheArtist Script';
+  	font-size: 45px;  
+}
 
+.gallery div:hover .overlay {
+	opacity: 1;
+}
 
 
 @media (min-width: 1080px) {
@@ -1686,6 +1705,22 @@ input[type="button"] {
 		box-sizing: border-box;
 	}
 
+	.overlay {
+	height: 100px;
+	background: rgb(0, 0, 0);
+  	background: rgba(0, 0, 0, 0.5); /* Black see-through */
+  	color: #f1f1f1;
+  	width: 100%;
+  	position: absolute;
+  	z-index: 1;
+  	bottom: 0;
+  	opacity: 0;
+  	transition: .5s;
+  	text-align: center;
+  	line-height: 100px;
+  	font-family: 'MADE TheArtist Script';
+  	font-size: 32px;  
+	}
 
 }
 
@@ -1708,7 +1743,7 @@ input[type="button"] {
 		position: relative;
 		top: 28px;
 		left: 50px;
-		z-index: 1;
+		z-index: 101;
 		-webkit-user-select: none;
 		user-select: none;
 		width: 150px;
@@ -1724,7 +1759,7 @@ input[type="button"] {
   		left: -5px;
   		cursor: pointer;
   		opacity: 0; /* hide this */
-  		z-index: 2; /* and place it over the hamburger */
+  		z-index: 102; /* and place it over the hamburger */
   		-webkit-touch-callout: none;
 		}
 
@@ -1741,7 +1776,7 @@ input[type="button"] {
   		background: #c48b9f;
   		border-radius: 5px;
   
-  		z-index: 1;
+  		z-index: 101;
   
   		transform-origin: 4px 0px;
   
@@ -1803,7 +1838,7 @@ input[type="button"] {
   
   		transform-origin: 0% 0%;
   		transform: translate(-100%, 0);
-  
+  		z-index: 100;
   		transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
 	}
 
@@ -1885,13 +1920,14 @@ input[type="button"] {
 
 	.main-image__form {
 		bottom: 40px;
+		width: 100%;
+		left: 0;
 	}
 
 	input[type="button"] {
-		width: 120px;
-
+		width: 220px;
  		padding: 10px 14px;
- 		font-size: 15px;
+ 		font-size: 25px;
 	}
 	
 
@@ -2438,6 +2474,22 @@ input[type="button"] {
 		height: 100%;
 		box-sizing: border-box;
 	}
+	.overlay {
+	height: 200px;
+	background: rgb(0, 0, 0);
+  	background: rgba(0, 0, 0, 0.5); /* Black see-through */
+  	color: #f1f1f1;
+  	width: 100%;
+  	position: absolute;
+  	z-index: 1;
+  	bottom: 0;
+  	opacity: 0;
+  	transition: .5s;
+  	text-align: center;
+  	line-height: 200px;
+  	font-family: 'MADE TheArtist Script';
+  	font-size: 43px;  
+	}
 	
 }
 
@@ -2463,7 +2515,7 @@ input[type="button"] {
 		position: relative;
 		top: 15px;
 		left: 50px;
-		z-index: 1;
+		z-index: 101;
 		-webkit-user-select: none;
 		user-select: none;
 		width: 150px;
@@ -2479,7 +2531,7 @@ input[type="button"] {
   		left: -5px;
   		cursor: pointer;
   		opacity: 0; /* hide this */
-  		z-index: 2; /* and place it over the hamburger */
+  		z-index: 102; /* and place it over the hamburger */
   		-webkit-touch-callout: none;
 		}
 
@@ -2496,7 +2548,7 @@ input[type="button"] {
   		background: #c48b9f;
   		border-radius: 5px;
   
-  		z-index: 1;
+  		z-index: 101;
   
   		transform-origin: 4px 0px;
   
@@ -2558,7 +2610,7 @@ input[type="button"] {
   
   		transform-origin: 0% 0%;
   		transform: translate(-100%, 0);
-  
+  		z-index: 100;
   		transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
 	}
 
