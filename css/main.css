@@ -1706,7 +1706,7 @@ input[type="button"] {
 	#menuToggle {
 		display: block;
 		position: relative;
-		top: 18px;
+		top: 28px;
 		left: 50px;
 		z-index: 1;
 		-webkit-user-select: none;
@@ -1845,7 +1845,7 @@ input[type="button"] {
 
 
 	.header-content {
-		height: 55px;
+		height: 80px;
 	}
 
 	.header-content__logo-container .header-content__logo{
@@ -2009,44 +2009,66 @@ input[type="button"] {
 	}
 
 
-	/*секция с vидео*/
+/*секция с vидео*/
 
 	.main-content__video-section {
-		clear: both;
-		width: 100%;
-		height: 300px;
-		overflow: hidden;
+		display: none;
 	}
-
-
-	.main-content__video-section:before {
-		margin-bottom: 50px;
-	}
-
-	.main-content__video-section video {
-		width: 100%;
-		height: auto;
-	}
-
 
 
 	/*топ камер для новичков*/
+	
+	.main-content__sidebar-header {
+		clear: both;
+	}
 
 	.main-content__top-three {
+		width: 100%;
+		height: auto;
 		margin-top: 35px;
 		padding-bottom: 35px;
 	}
-
 	.main-content__top-three:after {
-		margin-top: 75px;
+		content: " ";
+		width: 100%;
+		height: 1px;
+		display: block;
+		clear: both;
+		background-color: #c48b9f;
+		margin-top: 100px;
+	}
+	
+
+
+	.main-content__top-three .main-content__sidebar-header {
+		margin-bottom: 35px;
 	}
 
 	/*колонки*/
 
 
+
+	.main-content__top-three-col-left {
+		float: none;
+		width: 100%;
+		position: relative;
+	}
+
+	.main-content__top-three-col-center {
+		width: 100%;
+		position: relative;
+	}
+	.main-content__top-three-col-right {
+		float: none;
+		width: 100%;
+		position: relative;
+	}
+
 	.main-content__top-three img {
-		width: 200px;
-		height: 180px;
+		display: block;
+		width: 250px;
+		height: 230px;
+		margin: 0 auto;
 	}
 
 
@@ -2057,29 +2079,31 @@ input[type="button"] {
 	.main-content__col-center-list,
 	.main-content__col-left-list,
 	.main-sony-cameras__col-list {
-		margin: 18px 0 0 8px;
+		margin: 15px 0 0 10px;
 	}
 
 	.main-content__col-left-headline,
 	.main-content__col-right-headline,
 	.main-content__col-center-headline,
 	.main-sony-cameras__col-headline {
-		margin: 18px 0 0 8px;
+		letter-spacing: 2px;
+		margin: 20px 0 0 10px;
 	}
 
 	.main-content__col-left-list li,
 	.main-content__col-right-list li,
 	.main-content__col-center-list li,
-	.main-sony-cameras__col-list li {
-		font-size: 14px;
-		margin-bottom: 4px;
+	.main-sony-cameras__col-list li {	
+		font-size: 15px;
+		margin-bottom: 10px;
 	}
+
 
 	.main-content__col-left-list li a:last-child,
 	.main-content__col-right-list li a:last-child,
 	.main-content__col-center-list li a:last-child,
 	.main-sony-cameras__col-list li a:last-child {
-		margin-top: 10px;
+		float: none;
 	}
 
 
@@ -2784,7 +2808,7 @@ input[type="button"] {
 
 
 	/*топ камер для новичков*/
-
+	
 	.main-content__top-three {
 		width: 100%;
 		height: auto;
