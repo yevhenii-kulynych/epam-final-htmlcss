@@ -1,0 +1,12 @@
+@font-face {
+    font-family: 'Zhizn';
+    src: url('../fonts/Zhizn.eot');
+    src: url('../fonts/Zhizn.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Zhizn.woff2') format('woff2'),
+        url('../fonts/Zhizn.woff') format('woff'),
+        url('../fonts/Zhizn.ttf') format('truetype'),
+        url('../fonts/Zhizn.svg#Zhizn') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+

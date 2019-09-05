@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<!--[if IE]>
+		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+	<meta charset="UTF-8">
+	<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+	<link rel="stylesheet" href="css/main.css">
+	<title>Фотокарточки</title>
+</head>
+<body>
+	<header class="header-content">
+				<nav role="navigation" class="nav">
+  			<div id="menuToggle">
+    <!--
+    A fake / hidden checkbox is used as click reciever,
+    so you can use the :checked selector on it.
+    -->
+    		<input type="checkbox" />
+    
+    <!--
+    Some spans to act as a hamburger.
+    
+    They are acting like a real hamburger,
+    not that McDonalds stuff.
+    -->
+    		<span></span>
+    		<span></span>
+    		<span></span>
+    
+    <!--
+    Too bad the menu has to be inside of the button
+    but hey, it's pure CSS magic.
+    -->
+    		<ul id="menu">
+      			<li>
+					<a href="index.html">На главную</a>
+				</li>
+				<li>
+					<a href="#">Новости</a>
+				</li>
+				<li>
+					<a href="#">Камеры</a>
+					<ul class="header-content__menu-sub-list">
+						<li><a href="sony.html">Sony</a></li>
+						<li><a href="fujifilm.html">Fujifilm</a></li>
+						<li><a href="#">Nikon</a></li>
+						<li><a href="#">Canon</a></li>
+					</ul>
+				</li>
+				<li>
+					<a href="#">Объективы</a>
+					<ul class="header-content__menu-sub-list">
+						<li><a href="#">Объективы Sony</a></li>
+						<li><a href="#">Объективы Fujifilm</a></li>
+						<li><a href="#">Объективы Nikon</a></li>
+						<li><a href="#">Объективы Canon</a></li>
+					</ul>
+				<li>
+					<a href="form.html">Помощь</a>
+				</li>
+				<li>
+					<a href="gallery.html">Фотогалерея</a>
+				</li>
+    		</ul>
+  			</div>
+		</nav>
+		<nav class="header-content__navigation">
+			<ul class="header-content__nav-list">
+				<li class="header-content__list-items">
+					<a href="index.html">На главную</a>
+				</li>
+				<li class="header-content__list-items">
+					<a href="#">Новости</a>
+				</li>
+				<li class="header-content__list-items camera">
+					<a href="#">Камеры</a>
+					<ul class="header-content__list-items-camera-subparagraph">
+						<li><a href="sony.html">Sony</a></li>
+						<li><a href="fujifilm.html">Fujifilm</a></li>
+						<li><a href="#">Nikon</a></li>
+						<li><a href="#">Canon</a></li>
+					</ul>
+				</li>
+				<li class="header-content__list-items lens">
+					<a href="#">Объективы</a>
+					<ul class="header-content__list-items-lens-subparagraph">
+						<li><a href="#">Объективы Sony</a></li>
+						<li><a href="#">Объективы Fujifilm</a></li>
+						<li><a href="#">Объективы Nikon</a></li>
+						<li><a href="#">Объективы Canon</a></li>
+					</ul>
+				</li>
+				<li class="header-content__list-items">
+					<a href="form.html">Помощь</a>
+				</li>
+				<li class="header-content__list-items">
+					<a href="gallery.html">Фотогалерея</a>
+				</li>
+			</ul>
+		</nav>
+
+
+		<p class="header-content__logo-container">
+			<a href="index.html">
+				<img src="img/logo.png" alt="camera" width="100" height="100" class="header-content__logo">
+			</a>
+		</p>
+		
+	</header>
+	<main class="gallery">
+		<div><img src="img/flickr.jpg" alt="image"></div>
+		<div><img src="img/flickr_1.jpg" alt="image"></div>
+		<div><img src="img/flickr_2.jpg" alt="image"></div>
+		<div><img src="img/flickr_3.jpg" alt="image"></div>
+		<div><img src="img/flickr_4.jpg" alt="image"></div>
+		<div><img src="img/flickr_5.jpg" alt="image"></div>
+		<div><img src="img/flickr_6.jpg" alt="image"></div>
+		<div><img src="img/flickr_7.jpg" alt="image"></div>
+		<div><img src="img/flickr_8.jpg" alt="image"></div>
+		<div><img src="img/flickr_9.jpg" alt="image"></div>
+		<div><img src="img/flickr_10.jpg" alt="image"></div>
+		<div><img src="img/flickr_11.jpg" alt="image"></div>
+		<div><img src="img/flickr_12.jpg" alt="image"></div>
+		<div><img src="img/flickr_13.jpg" alt="image"></div>
+		<div><img src="img/flickr_14.jpg" alt="image"></div>
+		<div><img src="img/flickr_15.jpg" alt="image"></div>
+	</main>
+
+	<footer class="footer">
+		<section class="footer__wrap">
+			<p class="footer__text">Подпишись на рассылку новостей</p>
+			<form class="footer__form">
+				<input type="email" class="footer__input-email" pattern="^([a-z0-9_\.-]+)@([a-z0-9_\.-]+)\.([a-z\.]{2,6})$" placeholder="email@your.com" required>
+				<input type="submit" value="Подписаться" class="footer__input-submit">
+			</form>
+		</section>
+		<section class="footer__social">
+			<ul class="footer__social-list">
+				<li>
+					<a href="#" class="insta">
+						<img src="img/social-insta.png" alt="instagram">
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<img src="img/social-face.png" alt="facebook">
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<img src="img/social-in.png" alt="link">
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<img src="img/social-tube.png" alt="youtube">
+					</a>
+				</li>
+			</ul>
+		</section>
+		<p class="footer__bottom-text">Сайт создан с божьей помощью</p>
+	</footer>
+</body>
+</html>

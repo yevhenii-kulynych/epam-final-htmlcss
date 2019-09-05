@@ -1,0 +1,535 @@
+  body {
+  	min-width: 320px;
+  	background-color: green;
+  }
+  
+  /*шлавная страничка*/
+
+  /*HEADER STYLES*/
+
+	/*гамбургер меню*/
+
+	#menuToggle {
+		display: block;
+		position: relative;
+		top: 14px;
+		width: 150px;
+	}
+
+
+	#menuToggle input
+	{
+  		display: block;
+  		width: 40px;
+  		height: 32px;
+  		position: absolute;
+  		top: -7px;
+  		left: -5px;
+  
+  		cursor: pointer;
+  
+  		opacity: 0; /* hide this */
+  		z-index: 2; /* and place it over the hamburger */
+  
+  		-webkit-touch-callout: none;
+	}
+
+/*
+ * Just a quick hamburger
+ */
+#menuToggle span {
+  display: block;
+  width: 33px;
+  height: 4px;
+  margin-bottom: 5px;
+  position: relative;
+  
+  background: #c48b9f;
+  border-radius: 5px;
+  
+  z-index: 1;
+  
+  transform-origin: 4px 0px;
+  
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              opacity 0.55s ease;
+}
+
+
+
+#menuToggle span:first-child {
+	transform-origin: 0% 0%;
+}
+
+#menuToggle span:nth-last-child(2) {
+	transform-origin: 0% 100%;
+}
+
+/* 
+ * Transform all the slices of hamburger
+ * into a crossmark.
+ */
+#menuToggle input:checked ~ span {
+  opacity: 1;
+  transform: rotate(45deg) translate(-2px, -1px);
+  background: #c48b9f;
+}
+
+/*
+ * But let's hide the middle one.
+ */
+#menuToggle input:checked ~ span:nth-last-child(3) {
+  opacity: 0;
+  transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+/*
+ * Ohyeah and the last one should go the other direction
+ */
+#menuToggle input:checked ~ span:nth-last-child(2) {
+  transform: rotate(-45deg) translate(0, -1px);
+}
+
+/*
+ * Make this absolute positioned
+ * at the top left of the screen
+ */
+#menu {
+  position: absolute;
+  width: 300px;
+  margin: -100px 0 0 -50px;
+  padding: 50px;
+  padding-top: 125px;
+  
+  background: #29434e;
+  list-style-type: none;
+  -webkit-font-smoothing: antialiased;
+  /* to stop flickering of text in safari */
+  
+  transform-origin: 0% 0%;
+  transform: translate(-100%, 0);
+  
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+}
+
+#menu li {
+  padding: 10px 0;
+}
+
+#menu li a {
+  padding: 10px 0;
+  font-size: 22px;
+  color: white;
+}
+
+
+/*
+ * And let's slide it in from the left
+ */
+#menuToggle input:checked ~ ul {
+  transform: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*left side*/
+
+	.header-content {
+		width: 100%;
+		height: 50px;
+	}
+
+	.header-content__logo-container {
+		display: none;
+	}
+
+	/*right side*/
+
+
+	.header-content__navigation {
+		display: none;
+	}
+
+
+	/*секция с изображением*/
+
+	.main-image {
+		width: 100%;
+		height: 250px;
+		position: relative;
+		padding: 0;
+	}
+
+	/*текст*/
+
+	.main-image__greeting-headline {
+		top: 10px;
+		font-size: 18px;
+		letter-spacing: 1px;
+		display: none;
+	}
+
+	/*форма с кнопками*/
+
+
+	.main-image__form {
+		width: 50%;
+		position: absolute;
+		bottom: 100px;
+		left: 25%;
+		text-align: center;
+		display: none;
+	}
+
+	input[type="button"] {
+		width: 200px;
+ 		border: none;
+ 		color: white;
+ 		padding: 15px 20px;
+ 		text-decoration: none;
+		display: inline-block;
+ 		cursor: pointer;
+ 		border-radius: 8px;
+ 		font-family: 'AC Line';
+ 		font-size: 20px;
+ 		font-weight: 600;
+	}
+
+	.main-image__button-yes {
+		background-color: #8ce3ef;
+		margin-right: 10px;
+	}
+
+	.main-image__button-no {
+		background-color: #f8bbd0;
+	}
+
+
+
+	/*основной контент*/
+
+	.main-content {
+		width: 100%;
+	}
+
+	.main-content__header {
+		width: 100%;
+		height: 40px;
+		background-color: #29434e;
+	}
+
+
+	.main-content__headline {
+		font-family: 'AC Line';
+ 		font-size: 20px;
+ 		text-align: center;
+ 		color: white;
+ 		line-height: 40px;
+ 		letter-spacing: 5px;
+	}
+
+
+
+	.main-content__wrap {
+		width: 100%;
+		margin: 0 auto;
+		position: relative;
+	}
+
+
+	/*заголовки*/
+	.main-content__sidebar-header {
+		font-family: 'AC Line';
+ 		font-size: 15px;
+ 		line-height: 30px;
+	}
+
+
+
+	/*левая часть*/
+
+	.main-content__sidebar {
+		width: 100%;
+		height: 220px;
+		float: none;
+		box-sizing: border-box;
+		border-radius: 8px;
+		margin-top: 35px;
+	}
+
+	.main-content__sidebar-header {
+		height: 30px;
+		background-color: #c48b9f;
+		border-radius: 8px;
+	}
+
+
+	/*список*/
+
+	.main-content__aside-list {
+		margin: 15px 0 0 10px;
+	}
+
+
+
+	.main-content__aside-list li a{
+		font-size: 20px;
+		letter-spacing: 1px;
+		font-weight: 600;
+	}
+
+	.main-content__aside-list li {
+		margin-bottom: 10px;
+	}
+
+
+	/*правая часть*/
+
+	.main-content__main {
+		width: 100%;
+		height: auto;
+		margin-top: 35px;
+		box-sizing: border-box;
+		border-radius: 8px;
+		float: none;
+	}
+
+	.main-content__image-block-pic {
+		width: 100%;
+		height: auto;
+		display: block;
+		float: none;
+	}
+
+	.main-content__image-block-pic img {
+		display: block;
+		width: 300px;
+		height: 300px;
+		margin: 0 auto;
+	}
+
+
+
+	.main-content__new-items-block-options {
+		width: 100%;
+		float: none;
+	}
+
+	.main-conten__video-headline {
+		margin: 25px 0 0 10px;
+	}
+
+	.main-conten__options-list {
+		margin: 25px 0 0 10px;
+	}
+
+	.main-conten__options-list li {
+		font-size: 20px;
+		margin-bottom: 4px;
+	}
+
+	.main-conten__options-list li a:last-child {
+		color: #8ce3ef;
+		float: right;
+		font-weight: 600;
+		text-decoration: none;
+		margin-top: 10px;
+	}
+
+
+	/*секция с vидео*/
+
+	.main-content__video-section {
+		display: none;
+	}
+
+
+	/*топ камер для новичков*/
+
+	.main-content__top-three {
+		width: 100%;
+		height: auto;
+		margin-top: 35px;
+		padding-bottom: 35px;
+	}
+	.main-content__top-three:after {
+		content: " ";
+		width: 100%;
+		height: 1px;
+		display: block;
+		clear: both;
+		background-color: #c48b9f;
+		margin-top: 100px;
+	}
+
+
+
+	.main-content__top-three .main-content__sidebar-header {
+		margin-bottom: 35px;
+	}
+
+	/*колонки*/
+
+
+
+	.main-content__top-three-col-left {
+		float: none;
+		width: 100%;
+		position: relative;
+	}
+
+	.main-content__top-three-col-center {
+		width: 100%;
+		position: relative;
+	}
+	.main-content__top-three-col-right {
+		float: none;
+		width: 100%;
+		position: relative;
+	}
+
+	.main-content__top-three img {
+		display: block;
+		width: 150px;
+		height: 130px;
+		margin: 0 auto;
+	}
+
+
+
+	/*списки*/
+
+	.main-content__col-right-list,
+	.main-content__col-center-list,
+	.main-content__col-left-list,
+	.main-sony-cameras__col-list {
+		margin: 15px 0 0 10px;
+	}
+
+	.main-content__col-left-headline,
+	.main-content__col-right-headline,
+	.main-content__col-center-headline,
+	.main-sony-cameras__col-headline {
+		letter-spacing: 2px;
+		margin: 20px 0 0 10px;
+	}
+
+	.main-content__col-left-list li,
+	.main-content__col-right-list li,
+	.main-content__col-center-list li,
+	.main-sony-cameras__col-list li {	
+		font-size: 15px;
+		margin-bottom: 10px;
+	}
+
+
+	.main-content__col-left-list li a:last-child,
+	.main-content__col-right-list li a:last-child,
+	.main-content__col-center-list li a:last-child,
+	.main-sony-cameras__col-list li a:last-child {
+		float: none;
+	}
+
+
+
+	/*подвал*/
+
+	.footer {
+		width: 100%;
+		background-color: #29434e;
+		position: relative;
+		padding-bottom: 20px;
+	}	
+
+	.footer__wrap {
+		width: 100%;
+		padding-top: 20px;
+		text-align: center;
+	}
+
+	.footer__text {
+		font-size: 17px;
+		display: inline-block;
+	}
+
+	.footer__form {
+		display: inline-block;
+	}
+
+	/*инпут*/
+
+	.footer__input-email {
+		height: 30px; 
+		width: 200px; 
+		color: #819ca9; 
+		font-size: 18px; 
+		font-family: sans-serif;
+		letter-spacing: 1px;
+		padding-left: 15px;
+		position: relative;
+		bottom: 2px;
+	}
+
+	/*сабмит*/
+
+
+	.footer__input-submit {
+		width: 100px;
+		height: 33px;
+ 		font-size: 15px;
+ 		position: relative;
+ 		bottom: 1px;
+	}
+
+	.footer__social {
+		width: 100%;
+		margin-top: 30px;
+	}
+
+	.footer__social-list {
+		width: 100%;
+		text-align: center;
+	}
+
+	.footer__social-list li {
+		display: inline-block;
+		margin-right: 15px;
+	}
+
+
+	.footer__social-list li a {
+		display: block;
+		width: 25px;
+		height: 25px;
+		box-sizing: border-box;
+	}
+	.footer__social-list li a img{
+		display: block;
+		width: 25px;
+		height: 25px;
+	}
+
+	.footer__bottom-text {
+		font-size: 35px;
+		margin-top: 30px;
+	}

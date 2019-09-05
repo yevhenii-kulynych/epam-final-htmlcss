@@ -1,0 +1,12 @@
+@font-face {
+    font-family: 'MADE TheArtist Script';
+    src: url('../fonts/MADETheArtistScript.eot');
+    src: url('../fonts/MADETheArtistScript.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/MADETheArtistScript.woff2') format('woff2'),
+        url('../fonts/MADETheArtistScript.woff') format('woff'),
+        url('../fonts/MADETheArtistScript.ttf') format('truetype'),
+        url('../fonts/MADETheArtistScript.svg#MADETheArtistScript') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+

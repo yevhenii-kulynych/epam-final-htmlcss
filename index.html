@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	 <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<!--[if IE]>
+		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+	<meta charset="UTF-8">
+	<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+	<link rel="stylesheet" href="css/main.css">
+	<title>Главная страница</title>
+</head>
+<body>
+
+	<header class="header-content">
+
+		<nav role="navigation" class="nav">
+  			<div id="menuToggle">
+    <!--
+    A fake / hidden checkbox is used as click reciever,
+    so you can use the :checked selector on it.
+    -->
+    		<input type="checkbox" />
+    
+    <!--
+    Some spans to act as a hamburger.
+    
+    They are acting like a real hamburger,
+    not that McDonalds stuff.
+    -->
+    		<span></span>
+    		<span></span>
+    		<span></span>
+    
+    <!--
+    Too bad the menu has to be inside of the button
+    but hey, it's pure CSS magic.
+    -->
+    		<ul id="menu">
+      			<li>
+					<a href="index.html">На главную</a>
+				</li>
+				<li>
+					<a href="#">Новости</a>
+				</li>
+				<li>
+					<a href="#">Камеры</a>
+					<ul class="header-content__menu-sub-list">
+						<li><a href="sony.html">Sony</a></li>
+						<li><a href="fujifilm.html">Fujifilm</a></li>
+						<li><a href="#">Nikon</a></li>
+						<li><a href="#">Canon</a></li>
+					</ul>
+				</li>
+				<li>
+					<a href="#">Объективы</a>
+					<ul class="header-content__menu-sub-list">
+						<li><a href="#">Объективы Sony</a></li>
+						<li><a href="#">Объективы Fujifilm</a></li>
+						<li><a href="#">Объективы Nikon</a></li>
+						<li><a href="#">Объективы Canon</a></li>
+					</ul>
+				<li>
+					<a href="form.html">Помощь</a>
+				</li>
+				<li>
+					<a href="gallery.html">Фотогалерея</a>
+				</li>
+    		</ul>
+  			</div>
+		</nav>
+		<nav class="header-content__navigation">
+			<ul class="header-content__nav-list">
+				<li class="header-content__list-items">
+					<a href="index.html">На главную</a>
+				</li>
+				<li class="header-content__list-items">
+					<a href="#">Новости</a>
+				</li>
+				<li class="header-content__list-items camera">
+					<a href="#">Камеры</a>
+					<ul class="header-content__list-items-camera-subparagraph">
+						<li><a href="sony.html">Sony</a></li>
+						<li><a href="fujifilm.html">Fujifilm</a></li>
+						<li><a href="#">Nikon</a></li>
+						<li><a href="#">Canon</a></li>
+					</ul>
+				</li>
+				<li class="header-content__list-items lens">
+					<a href="#">Объективы</a>
+					<ul class="header-content__list-items-lens-subparagraph">
+						<li><a href="#">Объективы Sony</a></li>
+						<li><a href="#">Объективы Fujifilm</a></li>
+						<li><a href="#">Объективы Nikon</a></li>
+						<li><a href="#">Объективы Canon</a></li>
+					</ul>
+				</li>
+				<li class="header-content__list-items">
+					<a href="form.html">Помощь</a>
+				</li>
+				<li class="header-content__list-items">
+					<a href="gallery.html">Фотогалерея</a>
+				</li>
+			</ul>
+		</nav>
+
+
+		<p class="header-content__logo-container">
+			<a href="index.html">
+				<img src="img/logo.png" alt="camera" width="100" height="100" class="header-content__logo">
+			</a>
+		</p>
+		
+	</header>
+	<section class="main-image">
+		<img src="img/back_3.png" alt="camera" class="main-image__img">
+		<h1 class="main-image__greeting-headline">Ищешь камеру?</h1>
+		<form action="" class="main-image__form">
+			<input type="button" value="Да" class="main-image__button-yes" onclick="location.href='form.html'" />
+			<input type="button" value="Нет" class="main-image__button-no" onclick="location.href='form.html'"/>
+		</form>
+	</section>
+
+	<main class="main-content">
+		<header class="main-content__header">
+			<h2 class="main-content__headline">Общая информация</h2>
+		</header>
+
+		<section class="main-content__wrap">
+			<div class="clearfix">
+			<aside class="main-content__sidebar">
+				<header class="main-content__sidebar-header">
+					<h3>Интересное</h3>
+				</header>
+					<ul class="main-content__aside-list">
+						<li><a href="#">Для новичков</a></li>
+						<li><a href="#">Камеры</a></li>
+						<li><a href="#">Какой объектив выбрать</a></li>
+						<li><a href="#">Настройки</a></li>
+						<li><a href="#">Обсуждения</a></li>
+						<li><a href="#">Новинки</a></li>
+					</ul>
+			</aside>
+
+			<article class="main-content__main">
+				<header class="main-content__sidebar-header">
+					<h3>Новинки</h3>
+				</header>
+				<section class="main-content__new-items-block">
+					<section class="main-content__new-items-block-options">
+						<h3 class="main-conten__video-headline">
+							Sony Alpha A7 III
+						</h3>
+						<ul class="main-conten__options-list">
+							<li>Тип фотокамеры - <span>Системная камера</span></li>
+							<li>Тип матрицы - <span>BSI-CMOS</span></li>
+							<li>Размер матрицы - <span>Full Frame (36х24 мм)</span></li>
+							<li>Светочувствительность (ISO) - <span>ISO 100-51200 (extra ISO 50-204800)</span></li>
+							<li>Количество мегапикселей - <span>24 Mpix</span></li>
+							<li>Максимальный размер снимка - <span>6000x4000</span></li>
+							<li>Формат файлов - <span>JPEG, RAW</span></li>
+							<li><a href="#">Подробнее</a></li>
+						</ul>
+					</section>
+
+					<section class="main-content__image-block-pic">
+						<a href="#">
+							<img src="img/sony-a7-iii.jpg" alt="sony">
+						</a>
+					</section>	
+				</section>
+			</article>
+			
+			<section class="main-content__video-section">
+				<video src="video/video.mp4" type="video/mp4" autoplay loop muted>
+				</video>
+			</section>
+
+			<section class="main-content__top-three">
+				<header class="main-content__sidebar-header">
+					<h3>Топ 3 камеры для новичков</h3>
+				</header>
+				<section class="main-content__top-three-col-left">
+					<img src="img/fuji-xe1.jpg" alt="fujifilm xe-1">
+					<h3 class="main-content__col-left-headline">
+						Fujifilm xe-1
+					</h3>
+					<ul class="main-content__col-left-list">
+						<li>Тип фотокамеры - <span>Системная камера</span></li>
+						<li>Тип матрицы - <span>X-Trans CMOS</span></li>
+						<li>Размер матрицы - <span>APS-C</span></li>
+						<li>Количество мегапикселей - <span>16 Mpix</span></li>
+						<li>Формат файлов - <span>JPEG, RAW</span></li>
+						<li>Крепление объектива (байонет) - <span>Fujifilm X</span></li>
+						<li><a href="#">Подробнее</a></li>
+					</ul>
+					<div class="main-sony-cameras__lvl">
+						<p>lvl: Начальный</p>
+					</div>
+				</section>
+				<section class="main-content__top-three-col-right">
+					<img src="img/canon-2000d.jpg" alt="canon 2000d">
+					<h3 class="main-content__col-right-headline">
+						Canon 2000D
+					</h3>
+					<ul class="main-content__col-right-list">
+						<li>Тип фотокамеры - <span>Зеркальная камера</span></li>
+						<li>Тип матрицы - <span>CMOS (КМОП)</span></li>
+						<li>Размер матрицы - <span>APS-C</span></li>
+						<li>Количество мегапикселей - <span>24 Mpix</span></li>
+						<li>Максимальный размер снимка - <span>6000 x 4000</span></li>
+						<li>Крепление объектива (байонет) - <span>Canon EF, EF-S</span></li>
+						<li><a href="#">Подробнее</a></li>
+					</ul>
+					<div class="main-sony-cameras__lvl">
+						<p>lvl: Начальный</p>
+					</div>
+				</section>
+				<section class="main-content__top-three-col-center">
+					<img src="img/nikon-d5300.jpg" alt="nikon d3500">
+					<h3 class="main-content__col-center-headline">
+						Nikon D3500
+					</h3>
+					<ul class="main-content__col-center-list">
+						<li>Тип фотокамеры - <span>Зеркальная камера</span></li>
+						<li>Тип матрицы - <span>CMOS (КМОП)</span></li>
+						<li>Размер матрицы - <span>APS-C</span></li>
+						<li>Количество мегапикселей - <span>24 Mpix</span></li>
+						<li>Максимальный размер снимка - <span>6000 x 4000</span></li>
+						<li>Крепление объектива (байонет) - <span>Nikon F mount</span></li>
+						<li><a href="#">Подробнее</a></li>
+					</ul>
+					<div class="main-sony-cameras__lvl">
+						<p>lvl: Начальный</p>
+					</div>
+				</section>
+			</section>
+		</section>
+	</main>
+
+	<footer class="footer">
+		<section class="footer__wrap">
+			<p class="footer__text">Подпишись на рассылку новостей</p>
+			<form class="footer__form">
+				<input type="email" class="footer__input-email" pattern="^([a-z0-9_\.-]+)@([a-z0-9_\.-]+)\.([a-z\.]{2,6})$" placeholder="email@your.com" required>
+				<input type="submit" value="Подписаться" class="footer__input-submit">
+			</form>
+		</section>
+		<section class="footer__social">
+			<ul class="footer__social-list">
+				<li>
+					<a href="#" class="insta">
+						<img src="img/social-insta.png" alt="instagram">
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<img src="img/social-face.png" alt="facebook">
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<img src="img/social-in.png" alt="link">
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<img src="img/social-tube.png" alt="youtube">
+					</a>
+				</li>
+			</ul>
+		</section>
+		<p class="footer__bottom-text">Сайт создан с божьей помощью</p>
+	</footer>
+</body>

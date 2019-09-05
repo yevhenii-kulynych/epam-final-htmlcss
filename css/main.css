@@ -1,0 +1,3333 @@
+@import "normalize.css";
+@import "font_z.css";
+@import "font_ac.css";
+@import "font_clean_l.css";
+@import "font_script.css";
+
+* {
+	margin: 0 0;
+	padding: 0 0;
+}
+
+body {
+	background-color: white;
+	position: relative;
+}
+
+
+/*для IE 11*/
+
+main {
+  display: block;
+}
+
+
+
+/*HEADER STYLES*/
+
+/*left side*/
+
+.header-content {
+	width: 100%;
+	height: 80px;
+	background-color: #29434e;
+	position: relative;
+}
+
+.header-content__logo-container {
+	position: absolute;
+	right: 17%;
+}
+
+.header-content__logo-container .header-content__logo{
+	width: 70px;
+	height: 70px;
+}
+
+
+
+
+
+#menuToggle
+{
+  display: none;
+  position: relative;
+  top: 50px;
+  left: 50px;
+  
+  z-index: 1;
+  
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+
+
+/*right side*/
+
+
+.header-content__navigation {
+	float: left;
+	position: relative;
+	margin-left: 50px;
+	margin-top: 30px;
+}
+
+/*стили горизонтального списка навигации*/
+
+.header-content__nav-list a {
+	text-decoration: none;
+	color: white;
+}
+
+.header-content__nav-list li {
+	font-size: 18px;
+	font-family: 'AC Line';
+	letter-spacing: 2px;
+	font-weight: 600;
+}
+
+.header-content__nav-list .header-content__list-items {
+	display: inline-block;
+	list-style-type: none;
+	position: relative;
+	margin-right: 25px;
+	border-bottom: 10px solid transparent;
+}
+
+
+
+
+/*
+стили выпадающего меню*/
+
+.header-content__list-items-camera-subparagraph,
+.header-content__list-items-lens-subparagraph {
+	position: absolute;
+	list-style-type: none;
+	transition: 1.5s opacity;
+	opacity: 0;
+	top: -400em;
+}
+
+.header-content__list-items-camera-subparagraph li,
+.header-content__list-items-lens-subparagraph li {
+	background-color: #f8bbd0;
+	border-radius: 4px;
+	padding: 5px 15px;
+	box-sizing: border-box;
+	border-bottom: 2px solid white;
+	/*margin-bottom: 4px;*/
+}
+
+.header-content__list-items-camera-subparagraph li {
+	width: 100px;
+}
+
+.header-content__list-items-lens-subparagraph li {
+	width: 210px;
+}
+
+
+/*hover*/
+
+.camera:hover .header-content__list-items-camera-subparagraph,
+.lens:hover .header-content__list-items-lens-subparagraph {
+	opacity: 1;
+	top: 25px;
+	z-index: 10;
+}
+
+.header-content__list-items a:hover {
+	color: #f8bbd0;
+}
+
+.header-content__list-items-camera-subparagraph a:hover,
+.header-content__list-items-lens-subparagraph a:hover {
+	color: #29434e;
+}
+
+
+
+/*секция с изображением*/
+
+.main-image {
+	width: 65%;
+	height: 500px;
+	position: relative;
+	margin: 0 auto;
+	padding: 50px 0 50px 0;
+}
+
+.main-image .main-image__img {
+	width: 100%;
+	height: inherit;
+}
+
+/*текст*/
+
+.main-image__greeting-headline {
+	position: absolute;
+	color: white;
+	top: 200px;
+	text-align: center;
+	width: 100%;
+	font-size: 52px;
+	font-family: 'Zhizn';
+	letter-spacing: -1px;
+}
+
+/*форма с кнопками*/
+
+
+.main-image__form {
+	width: 50%;
+	position: absolute;
+	bottom: 100px;
+	left: 25%;
+	text-align: center;
+}
+
+input[type="button"] {
+	width: 200px;
+ 	border: none;
+ 	color: white;
+ 	padding: 15px 20px;
+ 	text-decoration: none;
+	display: inline-block;
+ 	cursor: pointer;
+ 	border-radius: 8px;
+ 	font-family: 'AC Line';
+ 	font-size: 20px;
+ 	font-weight: 600;
+}
+
+.main-image__button-yes {
+	background-color: #8ce3ef;
+	margin-right: 10px;
+
+}
+
+.main-image__button-no {
+	background-color: #f8bbd0;
+}
+
+
+
+.main-image__button-yes:hover  {
+	background: rgba(0,0,0,0);
+	color: #8ce3ef;
+	box-shadow: inset 0 0 0 3px #8ce3ef;
+	transition: 1s all;
+}
+
+.main-image__button-no:hover {
+	background: rgba(0,0,0,0);
+	color: #f8bbd0;
+	box-shadow: inset 0 0 0 3px #f8bbd0;
+	transition: 1s all;
+}
+
+
+/*основной контент*/
+
+.main-content {
+	width: 65%;
+	margin: 0 auto;
+}
+
+.main-content__header {
+	width: 100%;
+	height: 50px;
+	background-color: #29434e;
+}
+
+
+.main-content__headline {
+	font-family: 'AC Line';
+ 	font-size: 30px;
+ 	text-align: center;
+ 	color: white;
+ 	line-height: 50px;
+ 	letter-spacing: 5px;
+}
+
+
+
+.main-content__wrap {
+	width: 100%;
+	margin: 0 auto;
+	position: relative;
+}
+
+
+/*заголовки*/
+.main-content__sidebar-header {
+	font-family: 'AC Line';
+ 	font-size: 20px;
+ 	text-align: center;
+ 	color: white;
+ 	line-height: 45px;
+}
+
+
+
+/*левая часть*/
+
+.main-content__sidebar {
+	width: 25%;
+	height: 280px;
+	float: left;
+	box-sizing: border-box;
+	border-radius: 8px;
+	margin-top: 50px;
+}
+
+.main-content__sidebar-header {
+	height: 45px;
+	background-color: #c48b9f;
+	border-radius: 8px;
+}
+
+
+/*список*/
+
+.main-content__aside-list {
+	list-style: none;
+	list-style: inside;
+	margin: 10px 0 0 10px;
+}
+
+.main-content__aside-list li:nth-child(1) {
+	list-style-image: url(../img/icon-info.png);
+}
+
+.main-content__aside-list li:nth-child(2) {
+	list-style-image: url(../img/icon-camera.png);
+}
+
+.main-content__aside-list li:nth-child(3) {
+	list-style-image: url(../img/icon-lens.png);
+}
+
+.main-content__aside-list li:nth-child(4) {
+	list-style-image: url(../img/icon-setup.png);
+}
+
+.main-content__aside-list li:nth-child(5) {
+	list-style-image: url(../img/icon-chat.png);
+}
+.main-content__aside-list li:nth-child(6) {
+	list-style-image: url(../img/icon-cthulhu.png);
+}
+
+.main-content__aside-list li a{
+	text-decoration: none;
+	font-size: 18px;
+	font-family: 'AC Line';
+	color: #29434e;
+	letter-spacing: 1px;
+	font-weight: 600;
+}
+
+.main-content__aside-list li {
+	margin-bottom: 10px;
+}
+
+
+/*ховер по списку*/
+
+.main-content__aside-list li a:hover {
+	color: #f8bbd0;
+}
+
+
+
+
+/*правая часть*/
+
+.main-content__main {
+	width: 72%;
+	height: 400px;
+	float: right;
+	margin-top: 50px;
+	box-sizing: border-box;
+	border-radius: 8px;
+}
+
+.main-content__image-block-pic {
+	float: right;
+	width: 50%;
+	height: auto;
+}
+
+.main-content__image-block-pic img {
+	display: block;
+	width: 350px;
+	height: 350px;
+	margin: 0 auto;
+}
+
+
+
+.main-content__new-items-block-options {
+	overflow: hidden;
+	width: 50%;
+	float: left;
+}
+
+.main-conten__video-headline {
+	font-family: 'AC Line';
+	color: #29434e;
+	letter-spacing: 2px;
+	margin: 30px 0 0 10px;
+}
+
+.main-conten__options-list {
+	list-style: none;
+	margin: 30px 0 0 10px;
+}
+
+.main-conten__options-list li {
+	font-family: 'AC Line';
+	color: #29434e;
+	font-size: 17px;
+	margin-bottom: 4px;
+}
+
+.main-conten__options-list li span {
+	font-weight: 600;
+}
+
+
+.main-conten__options-list li a:last-child {
+	color: #8ce3ef;
+	float: right;
+	font-weight: 600;
+	text-decoration: none;
+	margin-top: 10px;
+}
+
+
+/*секция с vидео*/
+
+.main-content__video-section {
+	clear: both;
+	width: 100%;
+	height: 520px;
+	overflow: hidden;
+}
+
+
+.main-content__video-section:before {
+	content: " ";
+	width: 100%;
+	height: 1px;
+	display: block;
+	background-color: #c48b9f;
+	margin-bottom: 50px;
+}
+
+.main-content__video-section video {
+	width: 100%;
+	height: auto;
+}
+
+
+
+/*топ камер для новичков*/
+
+.main-content__top-three {
+	width: 100%;
+	height: auto;
+	margin-top: 50px;
+	padding-bottom: 50px;
+}
+.main-content__top-three:after {
+	content: " ";
+	width: 100%;
+	height: 1px;
+	display: block;
+	clear: both;
+	background-color: #c48b9f;
+	margin-top: 100px;
+}
+
+
+
+.main-content__top-three .main-content__sidebar-header {
+	margin-bottom: 50px;
+}
+
+/*колонки*/
+
+.main-content__top-three-col {
+	width: 30%;
+	margin-right: 25px;
+}
+
+
+.main-content__top-three-col-left {
+	float: left;
+	width: 30%;
+	position: relative;
+}
+
+.main-content__top-three-col-center {
+	width: 30%;
+	margin: 0 auto;
+	position: relative;
+}
+.main-content__top-three-col-right {
+	float: right;
+	width: 30%;
+	position: relative;
+}
+
+.main-content__top-three img {
+	display: block;
+	width: 260px;
+	height: 230px;
+	margin: 0 auto;
+}
+
+
+
+/*списки*/
+
+.main-content__col-right-list,
+.main-content__col-center-list,
+.main-content__col-left-list,
+.main-sony-cameras__col-list {
+	list-style: none;
+	margin: 30px 0 0 10px;
+}
+
+.main-content__col-left-headline,
+.main-content__col-right-headline,
+.main-content__col-center-headline,
+.main-sony-cameras__col-headline {
+	font-family: 'AC Line';
+	color: #29434e;
+	letter-spacing: 2px;
+	margin: 30px 0 0 10px;
+}
+
+.main-content__col-left-list li,
+.main-content__col-right-list li,
+.main-content__col-center-list li,
+.main-sony-cameras__col-list li {
+	font-family: 'AC Line';
+	color: #29434e;
+	font-size: 17px;
+	margin-bottom: 4px;
+}
+
+.main-content__col-left-list li span,
+.main-content__col-right-list li span,
+.main-content__col-center-list li span,
+.main-sony-cameras__col-list li span {
+	font-weight: 600;
+}
+
+
+.main-content__col-left-list li a:last-child,
+.main-content__col-right-list li a:last-child,
+.main-content__col-center-list li a:last-child,
+.main-sony-cameras__col-list li a:last-child {
+	color: #8ce3ef;
+	float: right;
+	font-weight: 600;
+	text-decoration: none;
+	margin-top: 10px;
+}
+
+
+
+/*подвал*/
+
+.footer {
+	width: 100%;
+	background-color: #29434e;
+	position: relative;
+	padding-bottom: 50px;
+}
+
+.footer__wrap {
+	width: 65%;
+	margin: 0 auto;
+	padding-top: 50px;
+}
+
+.footer__text {
+	font-family: 'AC Line';
+	color: white;
+	font-size: 22px;
+	display: inline-block;
+	margin-right: 50px;
+}
+
+.footer__form {
+	display: inline-block;
+}
+
+
+
+
+/*инпут*/
+
+.footer__input-email {
+   border: 1px solid #819ca9; 
+   border-radius: 3px;
+   -webkit-border-radius: 3px; 
+   -moz-border-radius: 3px; 
+   background: #ffffff; 
+   outline: none; 
+   height: 35px; 
+   width: 300px; 
+   color: #819ca9; 
+   font-size: 18px; 
+   font-family: sans-serif;
+   letter-spacing: 1px;
+   padding-left: 15px;
+   position: relative;
+   bottom: 2px;
+}
+
+.footer__input-email::-webkit-input-placeholder { 
+  color: #819ca9;
+  font-size: 18px;
+  letter-spacing: 1px;
+}
+.footer__input-email::-moz-placeholder { 
+  color: #819ca9;
+  font-size: 18px;
+  letter-spacing: 1px;
+}
+.footer__input-email:-ms-input-placeholder { 
+  color: #819ca9;
+  font-size: 18px;
+  letter-spacing: 1px;
+}
+.footer__input-email:-moz-placeholder {
+  color: #819ca9;
+  font-size: 18px;
+  letter-spacing: 1px;
+}
+
+
+
+.footer__input-email:focus:valid {
+	background-color: #8ce3ef;
+	color: white;
+	border: 1px solid #8ce3ef; 
+}
+
+.footer__input-email:focus:valid ~ .footer__input-submit{
+	background-color: #8ce3ef; 
+}
+
+.footer__input-email:valid ~ .footer__input-submit{
+	background-color: #8ce3ef;
+}
+
+.footer__input-email:focus:valid ~ .footer__input-submit:hover{
+	background: rgba(0,0,0,0);
+	color: #8ce3ef;
+	box-shadow: inset 0 0 0 3px #8ce3ef;
+}
+
+.footer__input-email:valid ~ .footer__input-submit:hover{
+	background: rgba(0,0,0,0);
+	color: #8ce3ef;
+	box-shadow: inset 0 0 0 3px #8ce3ef;
+}
+
+
+.footer__input-email:valid {
+	background-color: #8ce3ef;
+	color: white;
+	border: 1px solid #8ce3ef; 
+}
+
+.footer__input-email:focus {
+ 	color: #c48b9f;
+ 	border: 1px solid #29434e;
+ 	background-color: #29434e;
+}
+
+.footer__input-email:focus:invalid {
+	background-color: #f8bbd0;
+	color: white;
+	border: 1px solid #29434e; 
+}
+
+/*сабмит*/
+
+
+.footer__input-submit {
+	width: 200px;
+ 	border: none;
+ 	color: white;
+	height: 38px;
+ 	text-decoration: none;
+	display: inline-block;
+ 	cursor: pointer;
+ 	border-radius: 8px;
+	-webkit-border-radius: 8px; 
+	-moz-border-radius: 8px; 
+ 	font-family: 'AC Line';
+ 	font-size: 20px;
+ 	font-weight: 600;
+ 	background-color: #819ca9;
+ 	margin-left: 10px;
+}
+
+
+.footer__input-submit:hover  {
+	background: rgba(0,0,0,0);
+	color: #819ca9;
+	box-shadow: inset 0 0 0 3px #819ca9;
+	transition: 1s all;
+}
+
+.footer__social {
+	width: 100%;
+	margin-top: 75px;
+}
+
+.footer__social-list {
+	list-style: none;
+	width: 50%;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.footer__social-list li {
+	display: inline-block;
+	margin-right: 15px;
+}
+
+
+.footer__social-list li a {
+	display: block;
+	width: 50px;
+	height: 50px;
+	box-sizing: border-box;
+}
+
+.footer__bottom-text {
+	text-align: center;
+	color: white;
+	font-family: 'MADE TheArtist Script';
+	font-size: 40px;
+	margin-top: 50px;
+}
+
+
+
+
+/*страничка SONY - FUJI*/
+
+
+
+/*блок о компании*/
+
+
+.info-about-sony,
+.info-about-fuji {
+	width: 65%;
+	margin: 0 auto;
+}
+
+.info-about-sony__header,
+.info-about-fuji__header  {
+	width: 100%;
+	padding-top: 25px;
+}
+
+.info-about-sony__header:after,
+.info-about-fuji__header:after {
+	content: " ";
+	width: 100%;
+	height: 1px;
+	display: block;
+	clear: both;
+	background-color: #c48b9f;
+	margin: 50px 0 50px 0;
+}
+
+
+.info-about-sony__header a,
+.info-about-fuji__header a {
+	display: block;
+	width: 150px;
+	height: auto;
+	float: left;
+	margin-top: 7px;
+	margin-right: 15px;
+}
+
+.info-about-sony__header img,
+.info-about-fuji__header img {
+	width: 100%;
+	display: block;
+	height: auto;
+}
+
+.info-about-sony__header-text,
+.info-about-fuji__header-text {
+	overflow: hidden;
+	color: #29434e;
+	font-family: 'Cleanvertising';
+	font-size: 20px;
+	letter-spacing: -1px;
+	text-align: justify;
+}
+
+.info-about-sony__header-text span,
+.info-about-fuji__header-text span {
+	font-weight: 700;
+}
+
+.info-about-sony__section-about-sony-alpha
+.info-about-fuji__section-about-fuji-x {
+	margin-top: 50px;
+}
+
+.info-about-sony__section-about-sony-alpha:after,
+.info-about-fuji__section-about-fuji-x:after {
+	content: " ";
+	width: 100%;
+	height: 1px;
+	display: block;
+	clear: both;
+	background-color: #c48b9f;
+	margin-top: 50px;
+}
+
+.info-about-sony__sony-alpha-text,
+.info-about-fuji__fuji-x-text {
+	overflow: hidden;
+	color: #29434e;
+	font-family: 'Cleanvertising';
+	font-size: 16px;
+	letter-spacing: -1px;
+	text-align: justify;
+}
+
+.info-about-sony__sony-alpha-text span,
+.info-about-fuji__fuji-x-text span {
+	font-weight: 700;
+}
+
+
+
+/*главный контейнер сони-fuji*/
+
+
+.main-sony-cameras,
+.main-fuji-cameras  {
+	width: 65%;
+	margin: 0 auto;
+}
+
+.main-sony-cameras:after,
+.main-fuji-cameras:after {
+	content: " ";
+	width: 100%;
+	height: 1px;
+	display: block;
+	clear: both;
+	background-color: #c48b9f;
+	margin: 50px 0 50px 0;
+}
+
+
+
+.top-margin {
+	margin-top: 50px;
+}
+
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.left {
+	float: left;
+}
+
+.right {
+	float: right;
+}
+
+.main-sony-cameras__col,
+.main-fuji-cameras__col {
+	box-sizing: border-box;
+	width: 30%;
+	margin: 0 auto;
+	position: relative;
+}
+
+.main-sony-cameras__col img,
+.main-fuji-cameras__col img {
+	display: block;
+	width: 260px;
+	height: 230px;
+	margin: 0 auto;
+}
+
+.main-sony-cameras__lvl,
+.main-fuji-cameras__lvl {
+	padding: 5px 10px;
+	background-color: #8ce3ef;
+	border-radius: 5px;
+	position: absolute;
+	text-align: center;
+	right: 0;
+	top: 10px;
+}
+
+.main-sony-cameras__lvl p,
+.main-fuji-cameras__lvl p {
+	color: #29434e;
+	font-family: sans-serif;
+	font-size: 16px;
+	font-weight: 600;
+	letter-spacing: -1px;
+	color: white;
+}
+
+
+
+
+/*FORM CONTENT*/
+
+
+.content-form {
+	width: 50%;
+	margin: 0 auto;
+}
+
+.content-form__headline {
+	border-bottom: 1px solid #c48b9f;
+}
+
+.content-form__head-name {
+	font-size: 30px;
+	color: #29434e;
+	font-family: 'AC Line';
+	font-style: normal;
+	margin: 10px 0px 0px 0px;
+	letter-spacing: 1px;
+}
+
+.content-form__head-describe {
+	font-size: 15px;
+	margin-top: 30px;
+	margin-bottom: 30px;
+	font-family: 'AC Line';
+	color: #999999;
+}
+
+
+
+
+.content-form__inputs {
+
+}
+
+/*контактная информация*/
+
+.content-form__contact-information_headline {
+	font-size: 23px;
+	font-family: 'AC Line';
+	color: #29434e;
+	margin-top: 25px;
+	margin-bottom: 35px;
+	letter-spacing: 1px;
+}
+
+
+.content-form__form div {
+	display: inline-block;
+}
+
+.content-form__text-and-input {
+	width: 100%;
+	margin-bottom: 25px;
+	position: relative;
+}
+
+.content-form__text-and-input .symbol {
+	font-family: 'AC Line';
+    color: #29434e;
+    font-size: 20px;
+    margin-bottom: 4px;
+    float: left;
+}
+
+.dot:after {
+	content: '*';
+	color: red;
+	margin-left: 4px;
+}
+
+.content-form__input-email,
+.content-form__input-text {
+   border: 1px solid #819ca9; 
+   border-radius: 3px;
+   -webkit-border-radius: 3px; 
+   -moz-border-radius: 3px; 
+   background: #ffffff; 
+   outline: none; 
+   height: 35px; 
+   width: 300px; 
+   color: #819ca9; 
+   font-size: 18px; 
+   font-family: sans-serif;
+   letter-spacing: 1px;
+   padding-left: 15px;
+   bottom: 2px;
+   display: block;
+   position: absolute;
+   left: 150px;
+}
+
+
+.content-form__input-select {
+   border: 1px solid #819ca9; 
+   border-radius: 3px;
+   -webkit-border-radius: 3px; 
+   -moz-border-radius: 3px; 
+   background: #ffffff; 
+   outline: none; 
+   height: 35px; 
+   width: 318px; 
+   color: #819ca9; 
+   font-size: 18px; 
+   font-family: sans-serif;
+   letter-spacing: 1px;
+   padding-left: 15px;
+   bottom: 2px;
+   display: block;
+   position: absolute;
+   left: 150px;
+}
+
+
+
+
+.content-form__input-email::-webkit-input-placeholder,
+.content-form__input-text::-webkit-input-placeholder { 
+	color: #819ca9;
+	font-size: 18px;
+	letter-spacing: 1px;
+}
+.content-form__input-email::-moz-placeholder,
+.content-form__input-text::-moz-placeholder { 
+	color: #819ca9;
+	font-size: 18px;
+	letter-spacing: 1px;
+}
+.content-form__input-email:-ms-input-placeholder,
+.content-form__input-text:-ms-input-placeholder { 
+	color: #819ca9;
+	font-size: 18px;
+	letter-spacing: 1px;
+}
+.content-form__input-email:-moz-placeholder,
+.content-form__input-text:-moz-placeholder {
+	color: #819ca9;
+	font-size: 18px;
+	letter-spacing: 1px;
+}
+
+.content-form__input-email:focus:valid,
+.content-form__input-text:focus:valid {
+	background-color: #8ce3ef;
+	color: white;
+	border: 1px solid #8ce3ef; 
+}
+
+.content-form__input-email:valid,
+.content-form__input-text:valid {
+	background-color: #8ce3ef;
+	color: white;
+	border: 1px solid #8ce3ef; 
+}
+
+.content-form__input-email:focus,
+.content-form__input-text:focus {
+ 	color: #c48b9f;
+ 	border: 1px solid #29434e;
+ 	background-color: #29434e;
+}
+
+.content-form__input-email:focus:invalid,
+.content-form__input-text:focus:invalid {
+	background-color: #f8bbd0;
+	color: white;
+	border: 1px solid #29434e; 
+}
+
+
+.content-form__input-textarea {
+	width: 100%;
+	border: 1px solid #819ca9; 
+   border-radius: 3px;
+   -webkit-border-radius: 3px; 
+   -moz-border-radius: 3px; 
+   outline: none; 
+   height: 125px; 
+   color: #819ca9; 
+   font-size: 18px; 
+   font-family: sans-serif;
+   letter-spacing: 1px;
+   padding-left: 15px;
+   display: block;
+}
+
+
+.content-form__submit {
+	width: 200px;
+ 	border: none;
+ 	color: white;
+	height: 38px;
+ 	text-decoration: none;
+	display: inline-block;
+ 	cursor: pointer;
+ 	border-radius: 8px;
+	-webkit-border-radius: 8px; 
+	-moz-border-radius: 8px; 
+ 	font-family: 'AC Line';
+ 	font-size: 20px;
+ 	font-weight: 600;
+ 	background-color: #819ca9;
+ 	margin-top: 25px;
+}
+
+
+.content-form__submit:hover  {
+	background: rgba(0,0,0,0);
+	color: #819ca9;
+	box-shadow: inset 0 0 0 3px #819ca9;
+	transition: 1s all;
+}
+
+
+
+/*фотокарточки-галерея*/
+
+.gallery {
+	width: 80%;
+	margin: 0 auto;
+}
+
+.gallery div {
+	display: inline-block;
+	width: 33%;
+	height: 400px;
+	position: relative;
+}
+
+.gallery img {
+	display: block;
+	width: 100%;
+	height: 100%;
+	box-sizing: border-box;
+}
+
+
+
+
+@media (min-width: 1080px) {
+ 
+	
+}
+
+
+@media (min-width: 900px) and (max-width: 1440px) {
+  
+
+	/*главная страничка*/
+
+
+	/*right side*/
+
+
+	.header-content__navigation {
+		margin-right: 30px;
+	}
+
+	/*стили горизонтального списка навигации*/
+
+	.header-content__nav-list li {
+		font-size: 15px;
+	}
+
+	.header-content__nav-list .header-content__list-items {
+		margin-right: 16px;
+	}
+
+
+	/*секция с изображением*/
+
+	.main-image {
+		padding: 40px 0 40px 0;
+	}
+	/*текст*/
+
+	.main-image__greeting-headline {
+		font-size: 45px;
+	}	
+
+	/*форма с кнопками*/
+
+
+	.main-image__form {
+		bottom: 80px;
+	}
+
+	input[type="button"] {
+		width: 180px;
+ 		font-size: 18px;
+	}
+
+	/*основной контент*/
+
+
+	.main-content__header {
+		height: 45px;
+	}
+
+
+	.main-content__headline {
+ 		font-size: 26px;
+ 		line-height: 45px;
+	}
+	
+
+	/*заголовки*/
+	.main-content__sidebar-header {
+	 	font-size: 18px;
+	}
+
+
+
+	/*левая часть*/
+
+	.main-content__sidebar {
+		height: 260px;
+		margin-top: 40px;
+	}
+
+
+	/*список*/
+
+	.main-content__aside-list {
+		margin: 8px 0 0 8px;
+	}
+
+	.main-content__aside-list li a{
+		font-size: 16px;
+	}
+
+	.main-content__aside-list li {
+		margin-bottom: 8px;
+	}
+
+	/*правая часть*/
+
+	.main-content__main {
+		height: 380px;
+		margin-top: 40px;
+	}
+
+
+	.main-content__image-block-pic img {
+		width: 320px;
+		height: 320px;
+	}
+
+	.main-conten__video-headline {
+		margin: 25px 0 0 6px;
+	}
+
+	.main-conten__options-list {
+		list-style: none;
+		margin: 25px 0 0 6px;
+	}
+
+	.main-conten__options-list li {
+		font-size: 15px;
+	}
+
+	.main-conten__options-list li a:last-child {
+		margin-top: 25px;
+	}
+
+
+	/*секция с vидео*/
+
+	.main-content__video-section {
+		height: 480px;
+	}
+
+
+	.main-content__video-section:before {
+		margin-bottom: 40px;
+	}
+
+	/*топ камер для новичков*/
+
+	.main-content__top-three {
+		margin-top: 40px;
+		padding-bottom: 40px;
+	}
+
+	.main-content__top-three:after {
+		margin-top: 80px;
+	}
+
+
+
+	.main-content__top-three .main-content__sidebar-header {
+		margin-bottom: 40px;
+	}
+
+	/*колонки*/
+
+	.main-content__top-three-col {
+		width: 30%;
+		margin-right: 25px;
+	}
+
+
+	.main-content__top-three img {
+		width: 230px;
+		height: 200px;
+	}
+
+
+	/*списки*/
+
+	.main-content__col-right-list,
+	.main-content__col-center-list,
+	.main-content__col-left-list,
+	.main-sony-cameras__col-list {
+		margin: 25px 0 0 8px;
+	}
+
+	.main-content__col-left-headline,
+	.main-content__col-right-headline,
+	.main-content__col-center-headline,
+	.main-sony-cameras__col-headline {
+		letter-spacing: 1px;
+		margin: 25px 0 0 8px;
+	}
+
+	.main-content__col-left-list li,
+	.main-content__col-right-list li,
+	.main-content__col-center-list li,
+	.main-sony-cameras__col-list li {
+		font-size: 15px;
+		margin-bottom: 4px;
+	}
+
+	.main-content__col-left-list li a:last-child,
+	.main-content__col-right-list li a:last-child,
+	.main-content__col-center-list li a:last-child,
+	.main-sony-cameras__col-list li a:last-child {
+		margin-top: 10px;
+	}
+
+	
+	/*подвал*/
+
+	.footer {	
+		padding-bottom: 40px;
+	}
+
+	.footer__wrap {
+		padding-top: 40px;
+	}
+
+	.footer__text {
+		font-size: 19px;
+		margin-right: 40px;
+	}
+
+	/*инпут*/
+
+	.footer__input-email {
+   		height: 30px; 
+   		width: 280px; 
+   		font-size: 15px; 
+   		padding-left: 13px;
+	}
+
+
+	/*сабмит*/
+
+
+	.footer__input-submit {
+		width: 180px;
+		height: 35px;
+ 		font-size: 18px;
+ 		margin-left: 10px;
+	}
+
+
+	.footer__social {
+		width: 100%;
+		margin-top: 55px;
+	}
+
+	.footer__social-list li {
+		display: inline-block;
+		margin-right: 15px;
+	}
+
+
+	.footer__social-list li a {
+		width: 50px;
+		height: 50px;
+	}
+
+	.footer__bottom-text {
+		font-size: 35px;
+		margin-top: 45px;
+	}
+
+	/*страничка SONY - FUJI*/
+
+
+
+	/*блок о компании*/
+
+
+	.info-about-sony,
+	.info-about-fuji {
+		width: 65%;
+		margin: 0 auto;
+	}
+
+	.info-about-sony__header,
+	.info-about-fuji__header  {
+		padding-top: 20px;
+	}
+
+	.info-about-sony__header:after,
+	.info-about-fuji__header:after {
+		margin: 40px 0 40px 0;
+	}
+
+
+	.info-about-sony__header a,
+	.info-about-fuji__header a {
+		display: block;
+		width: 150px;
+		height: auto;
+		float: left;
+		margin-top: 7px;
+		margin-right: 15px;
+	}
+
+	.info-about-sony__header-text,
+	.info-about-fuji__header-text {
+		font-size: 18px;
+	}
+
+	.info-about-sony__section-about-sony-alpha
+	.info-about-fuji__section-about-fuji-x {
+		margin-top: 40px;
+	}
+
+	.info-about-sony__section-about-sony-alpha:after,
+	.info-about-fuji__section-about-fuji-x:after {
+		margin-top: 40px;
+	}
+
+	.info-about-sony__sony-alpha-text,
+	.info-about-fuji__fuji-x-text {
+		font-size: 14px;
+	}
+
+	/*главный контейнер сони-fuji*/
+
+
+	.main-sony-cameras:after,
+	.main-fuji-cameras:after {
+
+		margin: 40px 0 40px 0;
+	}
+
+
+
+	.top-margin {
+		margin-top: 40px;
+	}
+
+
+	.left {
+		float: left;
+	}
+
+	.right {
+		float: right;
+	}
+
+	.main-sony-cameras__col,
+	.main-fuji-cameras__col {
+		box-sizing: border-box;
+		width: 30%;
+		margin: 0 auto;
+		position: relative;
+	}
+
+	.main-sony-cameras__col img,
+	.main-fuji-cameras__col img {
+		display: block;
+		width: 230px;
+		height: 200px;
+		margin: 0 auto;
+	}
+
+	.main-sony-cameras__lvl,
+	.main-fuji-cameras__lvl {
+		padding: 5px 10px;
+		background-color: #8ce3ef;
+		border-radius: 5px;
+		position: absolute;
+		text-align: center;
+		right: 0;
+		top: 10px;
+	}
+
+	.main-sony-cameras__lvl p,
+	.main-fuji-cameras__lvl p {
+		color: #29434e;
+		font-family: sans-serif;
+		font-size: 14px;
+		font-weight: 600;
+		letter-spacing: -1px;
+		color: white;
+	}
+	
+	/*FORM CONTENT*/
+
+
+	.content-form {
+		width: 50%;
+		margin: 0 auto;
+	}
+
+	.content-form__head-name {
+		font-size: 26px;
+	}
+
+	.content-form__head-describe {
+		font-size: 13px;
+		margin-top: 25px;
+		margin-bottom: 25px;
+		font-family: 'AC Line';
+		color: #999999;
+	}
+
+
+
+
+	.content-form__inputs {
+
+	}
+
+	/*контактная информация*/
+
+	.content-form__contact-information_headline {
+		font-size: 20px;
+		margin-top: 20px;
+		margin-bottom: 30px;
+	}
+
+
+	.content-form__form div {
+		display: inline-block;
+	}
+
+	.content-form__text-and-input {
+		width: 100%;
+		margin-bottom: 25px;
+		position: relative;
+	}
+
+	.content-form__text-and-input .symbol {
+		font-family: 'AC Line';
+    	color: #29434e;
+    	font-size: 17px;
+    	margin-bottom: 4px;
+    	float: left;
+	}
+
+	.dot:after {
+		content: '*';
+		color: red;
+		margin-left: 3px;
+	}
+
+	.content-form__input-email,
+	.content-form__input-text {
+   		height: 30px; 
+   		width: 280px; 
+   		font-size: 17px; 
+   		bottom: -1px;
+	}
+
+	.content-form__input-select {
+   		height: 30px; 
+   		width: 300px; 
+   		font-size: 17px; 
+   		letter-spacing: 1px;
+   		padding-left: 15px;
+   		bottom: -1px;
+	}
+
+
+
+	.content-form__input-email::-webkit-input-placeholder,
+	.content-form__input-text::-webkit-input-placeholder { 
+		color: #819ca9;
+		font-size: 17px;
+		letter-spacing: 1px;
+	}
+	.content-form__input-email::-moz-placeholder,
+	.content-form__input-text::-moz-placeholder { 
+		color: #819ca9;
+		font-size: 17px;
+		letter-spacing: 1px;
+	}
+	.content-form__input-email:-ms-input-placeholder,
+	.content-form__input-text:-ms-input-placeholder { 
+		color: #819ca9;
+		font-size: 17px;
+		letter-spacing: 1px;
+	}
+	.content-form__input-email:-moz-placeholder,
+	.content-form__input-text:-moz-placeholder {
+		color: #819ca9;
+		font-size: 17px;
+		letter-spacing: 1px;
+	}
+
+	.content-form__input-email:focus:valid,
+	.content-form__input-text:focus:valid {
+		background-color: #8ce3ef;
+		color: white;
+		border: 1px solid #8ce3ef; 
+	}
+
+	.content-form__input-email:valid,
+	.content-form__input-text:valid {
+		background-color: #8ce3ef;
+		color: white;
+		border: 1px solid #8ce3ef; 
+	}
+
+	.content-form__input-email:focus,
+	.content-form__input-text:focus {
+ 		color: #c48b9f;
+ 		border: 1px solid #29434e;
+ 		background-color: #29434e;
+	}
+
+	.content-form__input-email:focus:invalid,
+	.content-form__input-text:focus:invalid {
+		background-color: #f8bbd0;
+		color: white;
+		border: 1px solid #29434e; 
+	}
+
+
+	.content-form__input-textarea {
+		width: 90%; 
+   		height: 115px; 
+   		font-size: 17px; 
+	}
+
+
+	.content-form__submit {
+		width: 180px;
+		height: 35px;
+ 		font-size: 17px;
+ 		margin-top: 20px;
+	}
+
+	/*фотокарточки-галерея*/
+
+	.gallery {
+		width: 90%;
+		margin: 0 auto;
+	}
+
+	.gallery div {
+		display: inline-block;
+		width: 24.5%;
+		height: 285px;
+		transition: .5s;
+	}
+
+	.gallery img {
+		display: block;
+		width: 100%;
+		height: 100%;
+		box-sizing: border-box;
+	}
+
+
+}
+
+
+
+
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  
+  /*главная страничка*/
+
+  /*HEADER STYLES*/
+
+	/*left side*/
+
+	/*гамбургер меню*/
+
+	#menuToggle {
+		display: block;
+		position: relative;
+		top: 18px;
+		left: 50px;
+		z-index: 1;
+		-webkit-user-select: none;
+		user-select: none;
+		width: 150px;
+	}
+
+
+	#menuToggle input {
+  		display: block;
+  		width: 40px;
+ 	   	height: 32px;
+  		position: absolute;
+  		top: -7px;
+  		left: -5px;
+  		cursor: pointer;
+  		opacity: 0; /* hide this */
+  		z-index: 2; /* and place it over the hamburger */
+  		-webkit-touch-callout: none;
+		}
+
+	/*
+	 * Just a quick hamburger
+	 */
+	#menuToggle span {
+  		display: block;
+  		width: 33px;
+  		height: 4px;
+  		margin-bottom: 5px;
+  		position: relative;
+  
+  		background: #c48b9f;
+  		border-radius: 5px;
+  
+  		z-index: 1;
+  
+  		transform-origin: 4px 0px;
+  
+  		transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              opacity 0.55s ease;
+		}
+
+
+
+	#menuToggle span:first-child {
+		transform-origin: 0% 0%;
+	}
+
+	#menuToggle span:nth-last-child(2) {
+		transform-origin: 0% 100%;
+	}
+
+/* 
+ * Transform all the slices of hamburger
+ * into a crossmark.
+ */
+	#menuToggle input:checked ~ span {
+  		opacity: 1;
+  		transform: rotate(45deg) translate(-2px, -1px);
+  		background: #c48b9f;
+	}
+
+/*
+ * But let's hide the middle one.
+ */
+	#menuToggle input:checked ~ span:nth-last-child(3) {
+  		opacity: 0;
+  		transform: rotate(0deg) scale(0.2, 0.2);
+	}
+
+/*
+ * Ohyeah and the last one should go the other direction
+ */
+	#menuToggle input:checked ~ span:nth-last-child(2) {
+  		transform: rotate(-45deg) translate(0, -1px);
+	}
+
+/*
+ * Make this absolute positioned
+ * at the top left of the screen
+ */
+	#menu {
+  		position: absolute;
+  		width: 300px;
+  		margin: -100px 0 0 -50px;
+  		padding: 50px;
+  		padding-top: 125px;
+  
+  		background: #29434e;
+  		list-style-type: none;
+  		-webkit-font-smoothing: antialiased;
+  		/* to stop flickering of text in safari */
+  
+  		transform-origin: 0% 0%;
+  		transform: translate(-100%, 0);
+  
+  		transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+	}
+
+	#menu li {
+  		padding: 10px 0;
+	}
+
+	#menu li:hover  {
+  		
+	}
+
+	#menu li a {
+  		padding: 5px 0;
+  		font-size: 22px;
+  		color: white;
+  		font-family: 'AC Line';
+  		text-decoration: none;
+	}
+	#menu li a:hover {
+  		color: #f8bbd0;
+  		margin-left: 8px;
+  		transition: .5s;
+  		border-bottom: 1px solid  #f8bbd0;
+	}
+	
+
+	.header-content__menu-sub-list{
+		margin-left: 50px;
+		list-style: none;
+	}
+
+
+/*
+ * And let's slide it in from the left
+ */
+	#menuToggle input:checked ~ ul {
+  		transform: none;
+	}
+
+
+	.header-content {
+		height: 55px;
+	}
+
+	.header-content__logo-container .header-content__logo{
+		display: none;
+	}
+
+	/*right side*/
+
+
+	.header-content__navigation {
+		display: none;
+	}
+
+	/*секция с изображением*/
+
+	.main-image {
+		width: 100%;
+		height: 400px;
+		padding:0;
+	}
+
+	/*текст*/
+
+	.main-image__greeting-headline {
+		position: absolute;
+		color: white;
+		top: 150px;
+		text-align: center;
+		width: 100%;
+		font-size: 35px;
+		font-family: 'Zhizn';
+		letter-spacing: -1px;
+	}
+
+	/*форма с кнопками*/
+
+
+	.main-image__form {
+		bottom: 40px;
+	}
+
+	input[type="button"] {
+		width: 120px;
+
+ 		padding: 10px 14px;
+ 		font-size: 15px;
+	}
+	
+
+	/*основной контент*/
+
+	.main-content {
+		width: 100%;
+	}
+
+	.main-content__header {
+
+		height: 45px;
+	}
+
+
+	.main-content__headline {
+ 		font-size: 22px;
+ 		line-height: 45px;
+	}
+
+
+
+	.main-content__wrap {
+		width: 100%;
+		margin: 0 auto;
+		position: relative;
+	}
+
+
+	/*заголовки*/
+	.main-content__sidebar-header {
+ 		font-size: 16px;
+ 		line-height: 35px;
+ 		height: 35px;
+	}
+
+
+
+	/*левая часть*/
+
+	.main-content__sidebar {
+		width: 25%;
+		height: 280px;
+		margin-top: 40px;
+	}
+
+	.main-content__sidebar-header {
+		height: 35px;
+	}
+
+
+	/*список*/
+
+	.main-content__aside-list {
+		list-style: none;
+		list-style: inside;
+		margin: 10px 0 0 10px;
+	}
+
+
+	.main-content__aside-list li a{
+		font-size: 14px;
+	}
+
+	.main-content__aside-list li {
+		margin-bottom: 8px;
+	}
+
+
+	/*правая часть*/
+
+	.main-content__main {
+		width: 72%;
+		height: 400px;
+		margin-top: 40px;
+	}
+
+	.main-content__image-block-pic {
+		float: right;
+		width: 50%;
+		height: auto;
+	}
+
+	.main-content__image-block-pic img {
+		display: block;
+		width: 250px;
+		height: 250px;
+	}
+
+
+
+	.main-content__new-items-block-options {
+		overflow: hidden;
+		width: 50%;
+		float: left;
+	}
+
+	.main-conten__video-headline {
+		letter-spacing: 1px;
+		margin: 15px 0 0 10px;
+	}
+
+	.main-conten__options-list {
+		list-style: none;
+		margin: 30px 0 0 10px;
+	}
+
+	.main-conten__options-list li {
+		font-size: 14px;
+		margin-bottom: 4px;
+	}
+
+	.main-conten__options-list li a:last-child {
+		margin-top: 5px;
+	}
+
+
+	/*секция с vидео*/
+
+	.main-content__video-section {
+		clear: both;
+		width: 100%;
+		height: 300px;
+		overflow: hidden;
+	}
+
+
+	.main-content__video-section:before {
+		margin-bottom: 50px;
+	}
+
+	.main-content__video-section video {
+		width: 100%;
+		height: auto;
+	}
+
+
+
+	/*топ камер для новичков*/
+
+	.main-content__top-three {
+		margin-top: 35px;
+		padding-bottom: 35px;
+	}
+
+	.main-content__top-three:after {
+		margin-top: 75px;
+	}
+
+	/*колонки*/
+
+
+	.main-content__top-three img {
+		width: 200px;
+		height: 180px;
+	}
+
+
+
+	/*списки*/
+
+	.main-content__col-right-list,
+	.main-content__col-center-list,
+	.main-content__col-left-list,
+	.main-sony-cameras__col-list {
+		margin: 18px 0 0 8px;
+	}
+
+	.main-content__col-left-headline,
+	.main-content__col-right-headline,
+	.main-content__col-center-headline,
+	.main-sony-cameras__col-headline {
+		margin: 18px 0 0 8px;
+	}
+
+	.main-content__col-left-list li,
+	.main-content__col-right-list li,
+	.main-content__col-center-list li,
+	.main-sony-cameras__col-list li {
+		font-size: 14px;
+		margin-bottom: 4px;
+	}
+
+	.main-content__col-left-list li a:last-child,
+	.main-content__col-right-list li a:last-child,
+	.main-content__col-center-list li a:last-child,
+	.main-sony-cameras__col-list li a:last-child {
+		margin-top: 10px;
+	}
+
+
+
+	/*подвал*/
+
+	.footer {
+		width: 100%;
+		background-color: #29434e;
+		position: relative;
+		padding-bottom: 25px;
+	}
+
+	.footer__wrap {
+		padding-top: 25px;
+	}
+
+	.footer__text {
+		font-size: 18px;
+	}
+
+	/*инпут*/
+
+	.footer__input-email {
+   		border: 1px solid #819ca9; 
+   		border-radius: 3px;
+   		-webkit-border-radius: 3px; 
+   		-moz-border-radius: 3px; 
+   		background: #ffffff; 
+   		outline: none; 
+   		height: 35px; 
+   		width: 300px; 
+   		color: #819ca9; 
+   		font-size: 18px; 
+   		font-family: sans-serif;
+   		letter-spacing: 1px;
+   		padding-left: 15px;
+   		position: relative;
+   		bottom: 2px;
+	}
+
+
+
+	.footer__social {
+		width: 100%;
+		margin-top: 45px;
+	}
+
+	.footer__social-list {
+		list-style: none;
+		width: 50%;
+		margin: 0 auto;
+		text-align: center;
+	}
+
+	.footer__social-list li a {
+		width: 30px;
+		height: 30px;
+	}
+
+	.footer__social-list li a img{
+		width: 30px;
+		height: 30px;
+	}
+
+	.footer__bottom-text {
+		font-size: 40px;
+		margin-top: 30px;
+	} 
+
+	/*страничка SONY - FUJI*/
+
+
+
+	/*блок о компании*/
+
+
+	.info-about-sony,
+	.info-about-fuji {
+		width: 100%;
+		margin: 0;
+	}
+
+	.info-about-sony__header,
+	.info-about-fuji__header  {
+		width: 100%;
+		padding-top: 20px;
+	}
+
+	.info-about-sony__header:after,
+	.info-about-fuji__header:after {
+		content: " ";
+		width: 100%;
+		height: 1px;
+		display: block;
+		clear: both;
+		background-color: #c48b9f;
+		margin: 30px 0 30px 0;
+	}
+
+
+	.info-about-sony__header a,
+	.info-about-fuji__header a {
+		display: block;
+		width: 100px;
+		height: auto;
+		float: left;
+		margin-top: 7px;
+		margin-right: 15px;
+		margin-left: 15px;
+	}
+
+	.info-about-sony__header img,
+	.info-about-fuji__header img {
+		width: 100%;
+		display: block;
+		height: auto;
+	}
+
+	.info-about-sony__header-text,
+	.info-about-fuji__header-text {
+		overflow: hidden;
+		color: #29434e;
+		font-family: 'Cleanvertising';
+		font-size: 15px;
+		letter-spacing: -1px;
+		text-align: justify;
+		margin-right: 15px;
+	}
+
+	.info-about-sony__section-about-sony-alpha
+	.info-about-fuji__section-about-fuji-x {
+		margin-top: 30px;
+	}
+
+	.info-about-sony__section-about-sony-alpha:after,
+	.info-about-fuji__section-about-fuji-x:after {
+		margin-top: 30px;
+	}
+
+	.info-about-sony__sony-alpha-text,
+	.info-about-fuji__fuji-x-text {
+		overflow: hidden;
+		color: #29434e;
+		font-family: 'Cleanvertising';
+		font-size: 14px;
+		letter-spacing: -1px;
+		text-align: justify;
+		margin: 0 15px;
+	}
+
+	/*главный контейнер сони-fuji*/
+
+
+	.main-sony-cameras,
+	.main-fuji-cameras  {
+		width: 100%;
+		margin: 0;
+	}
+
+	.main-sony-cameras:after,
+	.main-fuji-cameras:after {
+		margin: 30px 0 30px 0;
+	}
+
+
+
+	.top-margin {
+		margin-top: 30px;
+	}
+
+	.left {
+		float: left;
+	}
+
+	.right {
+		float: right;
+	}
+
+	.main-sony-cameras__col,
+	.main-fuji-cameras__col {
+		box-sizing: border-box;
+		width: 30%;
+		margin: 0 auto;
+		position: relative;
+	}
+
+	.main-sony-cameras__col img,
+	.main-fuji-cameras__col img {
+		display: block;
+		width: 230px;
+		height: 200px;
+		margin: 0 auto;
+	}
+
+	.main-sony-cameras__lvl,
+	.main-fuji-cameras__lvl {
+		padding: 5px 10px;
+		background-color: #8ce3ef;
+		border-radius: 5px;
+		position: absolute;
+		text-align: center;
+		right: 0;
+		top: 10px;
+	}
+
+	.main-sony-cameras__lvl p,
+	.main-fuji-cameras__lvl p {
+		font-size: 14px;
+	}
+
+	/*FORM CONTENT*/
+
+
+	.content-form {
+		width: 80%;
+		margin: 0 auto;
+	}
+
+	.content-form__head-name {
+		font-size: 30px;
+	}
+
+	.content-form__head-describe {
+		font-size: 17px;
+		margin-top: 25px;
+		margin-bottom: 25px;
+	}
+
+
+	/*контактная информация*/
+
+	.content-form__contact-information_headline {
+		font-size: 25px;
+		font-family: 'AC Line';
+		color: #29434e;
+		margin-top: 25px;
+		margin-bottom: 25px;
+		letter-spacing: 1px;
+	}
+
+	.content-form__text-and-input {
+		width: 100%;
+		margin-bottom: 25px;
+		position: relative;
+	}
+
+	.content-form__text-and-input .symbol {
+		font-family: 'AC Line';
+    	color: #29434e;
+    	font-size: 22px;
+    	margin-bottom: 4px;
+    	float: left;
+	}
+
+		
+	.content-form__input-email,
+	.content-form__input-text {
+   		height: 30px; 
+   		width: 300px; 
+   		font-size: 17px; 
+   		bottom: -1px;
+	}
+
+	.content-form__input-select {
+   		height: 30px; 
+   		width: 315px; 
+   		font-size: 17px; 
+   		letter-spacing: 1px;
+   		padding-left: 15px;
+   		bottom: -1px;
+	}
+
+
+	.content-form__input-email::-webkit-input-placeholder,
+	.content-form__input-text::-webkit-input-placeholder { 
+		color: #819ca9;
+		font-size: 17px;
+		letter-spacing: 1px;
+	}
+	.content-form__input-email::-moz-placeholder,
+	.content-form__input-text::-moz-placeholder { 
+		color: #819ca9;
+		font-size: 17px;
+		letter-spacing: 1px;
+	}
+	.content-form__input-email:-ms-input-placeholder,
+	.content-form__input-text:-ms-input-placeholder { 
+		color: #819ca9;
+		font-size: 17px;
+		letter-spacing: 1px;
+	}
+	.content-form__input-email:-moz-placeholder,
+	.content-form__input-text:-moz-placeholder {
+		color: #819ca9;
+		font-size: 17px;
+		letter-spacing: 1px;
+	}
+
+	.content-form__input-textarea {
+		width: 90%;
+		border: 1px solid #819ca9; 
+   		height: 150px;  
+   		font-size: 17px; 
+	}
+
+
+	.content-form__submit {
+		width: 210px;
+		height: 40px;
+ 		font-size: 22px;
+ 		margin-top: 30px;
+	}
+
+	/*фотокарточки-галерея*/
+
+	.gallery {
+		width: 90%;
+		margin: 0 auto;
+	}
+
+	.gallery div {
+		display: inline-block;
+		width: 49.5%;
+		height: 400px;
+		transition: .5s;
+	}
+
+	.gallery img {
+		display: block;
+		width: 100%;
+		height: 100%;
+		box-sizing: border-box;
+	}
+	
+}
+
+
+
+/* 
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 570px
+*/
+
+@media (min-width: 320px) and (max-width: 570px) {
+  
+  body {
+  	min-width: 320px;
+  }
+  
+  /*шлавная страничка*/
+
+  /*HEADER STYLES*/
+
+	#menuToggle {
+		display: block;
+		position: relative;
+		top: 15px;
+		left: 50px;
+		z-index: 1;
+		-webkit-user-select: none;
+		user-select: none;
+		width: 150px;
+	}
+
+
+	#menuToggle input {
+  		display: block;
+  		width: 40px;
+ 	   	height: 32px;
+  		position: absolute;
+  		top: -7px;
+  		left: -5px;
+  		cursor: pointer;
+  		opacity: 0; /* hide this */
+  		z-index: 2; /* and place it over the hamburger */
+  		-webkit-touch-callout: none;
+		}
+
+	/*
+	 * Just a quick hamburger
+	 */
+	#menuToggle span {
+  		display: block;
+  		width: 33px;
+  		height: 4px;
+  		margin-bottom: 5px;
+  		position: relative;
+  
+  		background: #c48b9f;
+  		border-radius: 5px;
+  
+  		z-index: 1;
+  
+  		transform-origin: 4px 0px;
+  
+  		transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              opacity 0.55s ease;
+		}
+
+
+
+	#menuToggle span:first-child {
+		transform-origin: 0% 0%;
+	}
+
+	#menuToggle span:nth-last-child(2) {
+		transform-origin: 0% 100%;
+	}
+
+/* 
+ * Transform all the slices of hamburger
+ * into a crossmark.
+ */
+	#menuToggle input:checked ~ span {
+  		opacity: 1;
+  		transform: rotate(45deg) translate(-2px, -1px);
+  		background: #c48b9f;
+	}
+
+/*
+ * But let's hide the middle one.
+ */
+	#menuToggle input:checked ~ span:nth-last-child(3) {
+  		opacity: 0;
+  		transform: rotate(0deg) scale(0.2, 0.2);
+	}
+
+/*
+ * Ohyeah and the last one should go the other direction
+ */
+	#menuToggle input:checked ~ span:nth-last-child(2) {
+  		transform: rotate(-45deg) translate(0, -1px);
+	}
+
+/*
+ * Make this absolute positioned
+ * at the top left of the screen
+ */
+	#menu {
+  		position: absolute;
+  		width: 250px;
+  		margin: -100px 0 0 -50px;
+  		padding: 25px;
+  		padding-top: 125px;
+  
+  		background: #29434e;
+  		list-style-type: none;
+  		-webkit-font-smoothing: antialiased;
+  		/* to stop flickering of text in safari */
+  
+  		transform-origin: 0% 0%;
+  		transform: translate(-100%, 0);
+  
+  		transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+	}
+
+	#menu li {
+  		padding: 10px 0;
+	}
+
+	#menu li a {
+  		padding: 5px 0;
+  		font-size: 18px;
+  		color: white;
+  		font-family: 'AC Line';
+  		text-decoration: none;
+	}
+	#menu li a:hover {
+  		color: #f8bbd0;
+  		margin-left: 8px;
+  		transition: .5s;
+  		border-bottom: 1px solid  #f8bbd0;
+	}
+	
+
+	.header-content__menu-sub-list{
+		margin-left: 50px;
+		list-style: none;
+	}
+
+
+/*
+ * And let's slide it in from the left
+ */
+	#menuToggle input:checked ~ ul {
+  		transform: none;
+	}
+
+
+/*left side*/
+
+	.header-content {
+		width: 100%;
+		height: 50px;
+	}
+
+	.header-content__logo-container {
+		display: none;
+	}
+
+	/*right side*/
+
+
+	.header-content__navigation {
+		display: none;
+	}
+
+
+	/*секция с изображением*/
+
+	.main-image {
+		width: 100%;
+		height: 250px;
+		position: relative;
+		padding: 0;
+	}
+
+	/*текст*/
+
+	.main-image__greeting-headline {
+		top: 10px;
+		font-size: 18px;
+		letter-spacing: 1px;
+		display: none;
+	}
+
+	/*форма с кнопками*/
+
+
+	.main-image__form {
+		width: 50%;
+		position: absolute;
+		bottom: 100px;
+		left: 25%;
+		text-align: center;
+		display: none;
+	}
+
+	input[type="button"] {
+		width: 200px;
+ 		border: none;
+ 		color: white;
+ 		padding: 15px 20px;
+ 		text-decoration: none;
+		display: inline-block;
+ 		cursor: pointer;
+ 		border-radius: 8px;
+ 		font-family: 'AC Line';
+ 		font-size: 20px;
+ 		font-weight: 600;
+	}
+
+	.main-image__button-yes {
+		background-color: #8ce3ef;
+		margin-right: 10px;
+	}
+
+	.main-image__button-no {
+		background-color: #f8bbd0;
+	}
+
+
+
+	/*основной контент*/
+
+	.main-content {
+		width: 100%;
+	}
+
+	.main-content__header {
+		width: 100%;
+		height: 40px;
+		background-color: #29434e;
+	}
+
+
+	.main-content__headline {
+		font-family: 'AC Line';
+ 		font-size: 20px;
+ 		text-align: center;
+ 		color: white;
+ 		line-height: 40px;
+ 		letter-spacing: 5px;
+	}
+
+
+
+	.main-content__wrap {
+		width: 100%;
+		margin: 0 auto;
+		position: relative;
+	}
+
+
+	/*заголовки*/
+	.main-content__sidebar-header {
+		font-family: 'AC Line';
+ 		font-size: 15px;
+ 		line-height: 30px;
+	}
+
+
+
+	/*левая часть*/
+
+	.main-content__sidebar {
+		width: 100%;
+		height: 220px;
+		float: none;
+		box-sizing: border-box;
+		border-radius: 8px;
+		margin-top: 35px;
+	}
+
+	.main-content__sidebar-header {
+		height: 30px;
+		background-color: #c48b9f;
+		border-radius: 8px;
+	}
+
+
+	/*список*/
+
+	.main-content__aside-list {
+		margin: 15px 0 0 10px;
+	}
+
+
+
+	.main-content__aside-list li a{
+		font-size: 20px;
+		letter-spacing: 1px;
+		font-weight: 600;
+	}
+
+	.main-content__aside-list li {
+		margin-bottom: 10px;
+	}
+
+
+	/*правая часть*/
+
+	.main-content__main {
+		width: 100%;
+		height: auto;
+		margin-top: 35px;
+		box-sizing: border-box;
+		border-radius: 8px;
+		float: none;
+	}
+
+	.main-content__image-block-pic {
+		width: 100%;
+		height: auto;
+		display: block;
+		float: none;
+	}
+
+	.main-content__image-block-pic img {
+		display: block;
+		width: 300px;
+		height: 300px;
+		margin: 0 auto;
+	}
+
+
+
+	.main-content__new-items-block-options {
+		width: 100%;
+		float: none;
+	}
+
+	.main-conten__video-headline {
+		margin: 25px 0 0 10px;
+	}
+
+	.main-conten__options-list {
+		margin: 25px 0 0 10px;
+	}
+
+	.main-conten__options-list li {
+		font-size: 20px;
+		margin-bottom: 4px;
+	}
+
+	.main-conten__options-list li a:last-child {
+		color: #8ce3ef;
+		float: right;
+		font-weight: 600;
+		text-decoration: none;
+		margin-top: 10px;
+	}
+
+
+	/*секция с vидео*/
+
+	.main-content__video-section {
+		display: none;
+	}
+
+
+	/*топ камер для новичков*/
+
+	.main-content__top-three {
+		width: 100%;
+		height: auto;
+		margin-top: 35px;
+		padding-bottom: 35px;
+	}
+	.main-content__top-three:after {
+		content: " ";
+		width: 100%;
+		height: 1px;
+		display: block;
+		clear: both;
+		background-color: #c48b9f;
+		margin-top: 100px;
+	}
+
+
+
+	.main-content__top-three .main-content__sidebar-header {
+		margin-bottom: 35px;
+	}
+
+	/*колонки*/
+
+
+
+	.main-content__top-three-col-left {
+		float: none;
+		width: 100%;
+		position: relative;
+	}
+
+	.main-content__top-three-col-center {
+		width: 100%;
+		position: relative;
+	}
+	.main-content__top-three-col-right {
+		float: none;
+		width: 100%;
+		position: relative;
+	}
+
+	.main-content__top-three img {
+		display: block;
+		width: 150px;
+		height: 130px;
+		margin: 0 auto;
+	}
+
+
+
+	/*списки*/
+
+	.main-content__col-right-list,
+	.main-content__col-center-list,
+	.main-content__col-left-list,
+	.main-sony-cameras__col-list {
+		margin: 15px 0 0 10px;
+	}
+
+	.main-content__col-left-headline,
+	.main-content__col-right-headline,
+	.main-content__col-center-headline,
+	.main-sony-cameras__col-headline {
+		letter-spacing: 2px;
+		margin: 20px 0 0 10px;
+	}
+
+	.main-content__col-left-list li,
+	.main-content__col-right-list li,
+	.main-content__col-center-list li,
+	.main-sony-cameras__col-list li {	
+		font-size: 15px;
+		margin-bottom: 10px;
+	}
+
+
+	.main-content__col-left-list li a:last-child,
+	.main-content__col-right-list li a:last-child,
+	.main-content__col-center-list li a:last-child,
+	.main-sony-cameras__col-list li a:last-child {
+		float: none;
+	}
+
+
+
+	/*подвал*/
+
+	.footer {
+		width: 100%;
+		background-color: #29434e;
+		position: relative;
+		padding-bottom: 20px;
+	}	
+
+	.footer__wrap {
+		width: 100%;
+		padding-top: 20px;
+		text-align: center;
+	}
+
+	.footer__text {
+		font-size: 17px;
+		display: inline-block;
+	}
+
+	.footer__form {
+		display: inline-block;
+	}
+
+	/*инпут*/
+
+	.footer__input-email {
+		height: 30px; 
+		width: 200px; 
+		color: #819ca9; 
+		font-size: 18px; 
+		font-family: sans-serif;
+		letter-spacing: 1px;
+		padding-left: 15px;
+		position: relative;
+		bottom: 2px;
+	}
+
+	/*сабмит*/
+
+
+	.footer__input-submit {
+		width: 100px;
+		height: 33px;
+ 		font-size: 15px;
+ 		position: relative;
+ 		bottom: 1px;
+	}
+
+	.footer__social {
+		width: 100%;
+		margin-top: 30px;
+	}
+
+	.footer__social-list {
+		width: 100%;
+		text-align: center;
+	}
+
+	.footer__social-list li {
+		display: inline-block;
+		margin-right: 15px;
+	}
+
+
+	.footer__social-list li a {
+		display: block;
+		width: 25px;
+		height: 25px;
+		box-sizing: border-box;
+	}
+	.footer__social-list li a img{
+		display: block;
+		width: 25px;
+		height: 25px;
+	}
+
+	.footer__bottom-text {
+		font-size: 35px;
+		margin-top: 30px;
+	}
+
+	/*страничка SONY - FUJI*/
+
+
+
+	/*блок о компании*/
+
+
+	.info-about-sony,
+	.info-about-fuji {
+		width: 100%;
+		margin: 0;
+	}
+
+	.info-about-sony__header,
+	.info-about-fuji__header  {
+		width: 100%;
+		padding-top: 10px;
+	}
+
+	.info-about-sony__header:after,
+	.info-about-fuji__header:after {
+		content: " ";
+		width: 100%;
+		height: 1px;
+		display: block;
+		clear: both;
+		background-color: #c48b9f;
+		margin: 25px 0 25px 0;
+	}
+
+
+	.info-about-sony__header a,
+	.info-about-fuji__header a {
+		display: block;
+		width: 100%;
+		height: auto;
+		float: none;
+		margin-top: 7px;
+		margin-right: 0;
+		text-align: center;
+	}
+
+	.info-about-sony__header img,
+	.info-about-fuji__header img {
+		width: 170px;
+		display: inline-block;
+		height: 45px;
+	}
+
+	.info-about-sony__header-text,
+	.info-about-fuji__header-text {
+		font-size: 14px;
+		letter-spacing: -1px;
+		text-align: justify;
+		margin: 0 15px;
+	}
+
+	.info-about-sony__section-about-sony-alpha
+	.info-about-fuji__section-about-fuji-x {
+		margin-top: 30px;
+	}
+
+	.info-about-sony__section-about-sony-alpha:after,
+	.info-about-fuji__section-about-fuji-x:after {
+		content: " ";
+		width: 100%;
+		height: 1px;
+		display: block;
+		clear: both;
+		background-color: #c48b9f;
+		margin-top: 30px;
+	}
+
+	.info-about-sony__sony-alpha-text,
+	.info-about-fuji__fuji-x-text {
+		overflow: hidden;
+		color: #29434e;
+		font-family: 'Cleanvertising';
+		font-size: 14px;
+		letter-spacing: -1px;
+		text-align: justify;
+		margin: 0 15px;
+	}
+
+	/*главный контейнер сони-fuji*/
+
+
+	.main-sony-cameras,
+	.main-fuji-cameras  {
+		width: 100%;
+		margin: 0;
+	}
+
+	.main-sony-cameras:after,
+	.main-fuji-cameras:after {
+		content: " ";
+		width: 100%;
+		height: 1px;
+		display: block;
+		clear: both;
+		background-color: #c48b9f;
+		margin: 30px 0 30px 0;
+	}
+
+
+
+	.top-margin {
+		margin-top: 50px;
+	}
+
+	.left {
+		float: none;
+	}
+
+	.right {
+		float: none;
+	}
+
+	.main-sony-cameras__col,
+	.main-fuji-cameras__col {
+		box-sizing: border-box;
+		width: 100%;
+		margin: 0 auto;
+		position: relative;
+	}
+
+	.main-sony-cameras__col img,
+	.main-fuji-cameras__col img {
+		display: block;
+		width: 230px;
+		height: 200px;
+		margin: 0 auto;
+	}
+
+	.main-sony-cameras__lvl,
+	.main-fuji-cameras__lvl {
+		padding: 5px 10px;
+		background-color: #8ce3ef;
+		border-radius: 5px;
+		position: absolute;
+		text-align: center;
+		right: 20px;
+		top: 10px;
+	}
+
+	.main-sony-cameras__lvl p,
+	.main-fuji-cameras__lvl p {
+		color: #29434e;
+		font-family: sans-serif;
+		font-size: 14px;
+		font-weight: 600;
+		letter-spacing: -1px;
+		color: white;
+	}
+
+	/*FORM CONTENT*/
+
+
+	.content-form {
+		width: 100%;
+	}
+
+	.content-form__headline {
+		border-bottom: 1px solid #c48b9f;
+		padding-left: 10px;
+	}
+
+	.content-form__head-name {
+		font-size: 28px;
+		color: #29434e;
+		font-family: 'AC Line';
+		font-style: normal;
+		margin: 10px 0px 0px 0px;
+		letter-spacing: 1px;
+	}
+
+	.content-form__head-describe {
+		font-size: 14px;
+		margin-top: 25px;
+		margin-bottom: 25px;
+	}
+
+
+
+
+	.content-form__inputs {
+		padding-left: 10px;
+	}
+
+	/*контактная информация*/
+
+	.content-form__contact-information_headline {
+		font-size: 20px;
+		font-family: 'AC Line';
+		color: #29434e;
+		margin-top: 20px;
+		margin-bottom: 30px;
+		letter-spacing: 1px;
+	}
+
+
+	.content-form__form div {
+		display: inline-block;
+	}
+
+	.content-form__text-and-input {
+		width: 100%;
+		margin-bottom: 25px;
+		position: relative;
+	}
+
+	.content-form__text-and-input .symbol {
+		font-family: 'AC Line';
+    	color: #29434e;
+    	font-size: 22px;
+    	margin-bottom: 4px;
+    	float: left;
+	}
+
+	.content-form__input-email,
+	.content-form__input-text {
+   		border: 1px solid #819ca9; 
+   		border-radius: 3px;
+   		-webkit-border-radius: 3px; 
+   		-moz-border-radius: 3px; 
+   		background: #ffffff; 
+   		outline: none; 
+   		height: 40px; 
+   		width: 300px; 
+   		color: #819ca9; 
+   		font-size: 18px; 
+   		font-family: sans-serif;
+   		letter-spacing: 1px;
+   		padding-left: 15px;
+   		bottom: -8px;
+   		display: block;
+   		position: absolute;
+   		left: 150px;
+	}
+
+
+	.content-form__input-select {
+   		border: 1px solid #819ca9; 
+   		border-radius: 3px;
+   		-webkit-border-radius: 3px; 
+   		-moz-border-radius: 3px; 
+   		background: #ffffff; 
+   		outline: none; 
+   		height: 40px; 
+   		width: 317px; 
+   		color: #819ca9; 
+   		font-size: 18px; 
+   		font-family: sans-serif;
+   		letter-spacing: 1px;
+   		padding-left: 15px;
+   		bottom: -5px;
+   		display: block;
+   		position: absolute;
+   		left: 150px;
+	}
+
+
+
+
+		.content-form__input-email::-webkit-input-placeholder,
+		.content-form__input-text::-webkit-input-placeholder { 
+			color: #819ca9;
+			font-size: 22px;
+			letter-spacing: 1px;
+		}
+		.content-form__input-email::-moz-placeholder,
+		.content-form__input-text::-moz-placeholder { 
+			color: #819ca9;
+			font-size: 22px;
+			letter-spacing: 1px;
+		}
+		.content-form__input-email:-ms-input-placeholder,
+		.content-form__input-text:-ms-input-placeholder { 
+			color: #819ca9;
+			font-size: 22px;
+			letter-spacing: 1px;
+		}
+		.content-form__input-email:-moz-placeholder,
+		.content-form__input-text:-moz-placeholder {
+			color: #819ca9;
+			font-size: 22px;
+			letter-spacing: 1px;
+		}
+
+		.content-form__input-email:focus:valid,
+		.content-form__input-text:focus:valid {
+			background-color: #8ce3ef;
+			color: white;
+			border: 1px solid #8ce3ef; 
+		}
+
+		.content-form__input-email:valid,
+		.content-form__input-text:valid {
+			background-color: #8ce3ef;
+			color: white;
+			border: 1px solid #8ce3ef; 
+		}
+
+		.content-form__input-email:focus,
+		.content-form__input-text:focus {
+ 			color: #c48b9f;
+ 			border: 1px solid #29434e;
+ 			background-color: #29434e;
+		}
+
+		.content-form__input-email:focus:invalid,
+		.content-form__input-text:focus:invalid {
+			background-color: #f8bbd0;
+			color: white;
+			border: 1px solid #29434e; 
+		}
+
+
+		.content-form__input-textarea {
+			width: 450px;
+			border: 1px solid #819ca9; 
+   			border-radius: 3px;
+   			-webkit-border-radius: 3px; 
+   			-moz-border-radius: 3px; 
+   			outline: none; 
+   			height: 125px; 
+   			color: #819ca9; 
+   			font-size: 18px; 
+   			font-family: sans-serif;
+   			letter-spacing: 1px;
+   			padding-left: 15px;
+   			display: block;
+		}
+
+
+	.content-form__submit {
+		width: 300px;
+ 		border: none;
+ 		color: white;
+		height: 40px;
+ 		text-decoration: none;
+		display: inline-block;
+ 		cursor: pointer;
+ 		border-radius: 8px;
+		-webkit-border-radius: 8px; 
+		-moz-border-radius: 8px; 
+ 		font-family: 'AC Line';
+ 		font-size: 20px;
+ 		font-weight: 600;
+ 		background-color: #819ca9;
+ 		margin-top: 25px;
+	}
+	
+		/*фотокарточки-галерея*/
+
+	.gallery {
+		width: 100%;
+		padding: 10px 10px;
+		box-sizing: border-box;
+	}
+
+	.gallery div {
+		display: inline-block;
+		width: 99.9%;
+		height: 450px;
+		transition: .5s;
+	}
+
+	.gallery img {
+		display: block;
+		width: 100%;
+		height: 100%;
+		box-sizing: border-box;
+	}
+
+
+
+}
